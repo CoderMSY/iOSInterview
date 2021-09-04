@@ -1,0 +1,34 @@
+PODS:
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.2)
+  - MSYCategory (0.1.0):
+    - MBProgressHUD (~> 1.2.0)
+  - MSYTableView (0.1.0):
+    - Masonry
+    - MJRefresh
+
+DEPENDENCIES:
+  - Masonry
+  - MSYCategory
+  - MSYTableView
+
+SPEC REPOS:
+  https://github.com/CoderMSY/MSYSpecs.git:
+    - MSYCategory
+  trunk:
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MSYTableView
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  MSYCategory: b3f2e910f1f4ef3d36801f62080a72dd96ffec11
+  MSYTableView: 4bde19c022935ceaa76bbac91e547bdbf4b66986
+
+PODFILE CHECKSUM: 468ba2dd16b15806cb9baa1f0cdea5f22b19813c
+
+COCOAPODS: 1.10.1

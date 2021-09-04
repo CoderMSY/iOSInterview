@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-iOSInterview/Pods-iOSInterview-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/MSYCategory/MSYCategory.framework
+${BUILT_PRODUCTS_DIR}/MSYTableView/MSYTableView.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

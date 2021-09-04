@@ -1,0 +1,6 @@
+framework module MSYCategory {
+  umbrella header "MSYCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}
