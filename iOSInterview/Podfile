@@ -10,6 +10,9 @@ target 'iOSInterview' do
 pod 'Masonry'
 pod 'MSYTableView'
 pod 'MSYCategory'
+pod 'MSYBaseClass'
+pod 'YYText'
+pod 'Aspects'
 
   # Pods for iOSInterview
 

@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "MSYTabBarCtrConfig.h"
+#import "YYFPSLabel.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self hotReload];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -28,8 +30,18 @@
     self.window.rootViewController = self.tabBarCtrConfig.tabBarCtr;
     [self.window makeKeyAndVisible];
     
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
     
     return YES;
+}
+
+- (void)hotReload {
+#ifdef DEBUG
+    //InjectionIII 注入
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+#else
+    
+#endif
 }
 
 

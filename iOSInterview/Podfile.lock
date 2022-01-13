@@ -1,34 +1,50 @@
 PODS:
+  - Aspects (1.4.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - MJRefresh (3.7.2)
+  - MJExtension (3.3.0)
+  - MJRefresh (3.7.5)
+  - MSYBaseClass (0.1.0):
+    - MJExtension
   - MSYCategory (0.1.0):
     - MBProgressHUD (~> 1.2.0)
-  - MSYTableView (0.1.0):
+  - MSYTableView (1.0.0):
     - Masonry
     - MJRefresh
+  - YYText (1.0.7)
 
 DEPENDENCIES:
+  - Aspects
   - Masonry
+  - MSYBaseClass
   - MSYCategory
   - MSYTableView
+  - YYText
 
 SPEC REPOS:
   https://github.com/CoderMSY/MSYSpecs.git:
+    - MSYBaseClass
     - MSYCategory
   trunk:
+    - Aspects
     - Masonry
     - MBProgressHUD
+    - MJExtension
     - MJRefresh
     - MSYTableView
+    - YYText
 
 SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  MJExtension: 01704cca2b60a214c10761b6491eab74069d68a9
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  MSYBaseClass: 56ca0d4363be74a9de0ab6427ee22d2a0be97887
   MSYCategory: b3f2e910f1f4ef3d36801f62080a72dd96ffec11
-  MSYTableView: 4bde19c022935ceaa76bbac91e547bdbf4b66986
+  MSYTableView: a0c5776f4f5eb88b5902a8abd6bcd1ea80e328b5
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 468ba2dd16b15806cb9baa1f0cdea5f22b19813c
+PODFILE CHECKSUM: 38d280703ef44fb218ff1dba361bd9e7c276984c
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

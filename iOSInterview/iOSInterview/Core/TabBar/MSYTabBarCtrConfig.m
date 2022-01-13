@@ -6,8 +6,12 @@
 //
 
 #import "MSYTabBarCtrConfig.h"
+#import <MSYBaseClass/MSYNavigationController.h>
+#import "MSYBasicViewController.h"
 #import "MSYAlgorithmViewController.h"
+#import "MSYMediaLayerViewController.h"
 
+static NSString *const kTBItemVC = @"viewController";
 static NSString *const kTBItemTitle = @"title";
 static NSString *const kTBItemImage = @"image";
 static NSString *const kTBItemSelectedImage = @"selectedImage";
@@ -75,44 +79,16 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
     NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:0];
     
     for (NSInteger i = 0; i < attributes.count; i ++) {
-        UIViewController *ctr;
-        if (0 == i) {
-            ctr = [[MSYAlgorithmViewController alloc] init];
-//            ctr = [[CTMediator sharedInstance] homeViewControllerWithCallback:^(NSString * _Nonnull result) {
-//                NSLog(@"%@", result);
-//            }];
-        }
-        else if (1 == i) {
-//            ctr = [[CTMediator sharedInstance] loveSeeViewCtr];
-//            ctr = [[CTMediator sharedInstance] miguHomeCtrWithParams:[NSDictionary dictionary]];
-        }
-        else if (2 == i) {
-//            ctr = [[CTMediator sharedInstance] shoppingViewCtr];
-        }
-        else if (3 == i) {
-//            ctr = [[CTMediator sharedInstance] tidePlayViewCtr];
-        }
-        else if (4 == i) {
-//            ctr = [[CTMediator sharedInstance] B_viewControllerWithContentText:@"hello NBA"];
-            NSDictionary *myParams = @{
-                @"userName" : @"Mercy",
-                @"userId" : @"123"
-            };
-//            ctr = [[CTMediator sharedInstance] myViewCtrWithParams:myParams callback:^(NSString * _Nonnull result) {
-//                NSLog(@"%@", result);
-//            }];
-        }
-        
+        NSDictionary *dic = attributes[i];
+        NSString *viewCtrName = dic[kTBItemVC];
+        UIViewController *ctr = [[NSClassFromString(viewCtrName) alloc] init];
         if (!ctr) {
-//            continue;
             ctr = [[UIViewController alloc] init];
         }
-        
-        NSDictionary *dic = attributes[i];
         ctr.tabBarItem.title = dic[kTBItemTitle];
         ctr.tabBarItem.image = [[UIImage imageNamed:dic[kTBItemImage]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         ctr.tabBarItem.selectedImage = [[UIImage imageNamed:dic[kTBItemSelectedImage]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        UINavigationController *navCtr = [[UINavigationController alloc] initWithRootViewController:ctr];
+        MSYNavigationController *navCtr = [[MSYNavigationController alloc] initWithRootViewController:ctr];
         [viewControllers addObject:navCtr];
     }
     
@@ -122,18 +98,21 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
 
 - (NSArray *)tabBarItemsAttributes {
     NSDictionary *firstItemsAttributes = @{
-        kTBItemTitle : @"首页",
+        kTBItemVC : NSStringFromClass([MSYBasicViewController class]),
+        kTBItemTitle : @"基础",
         kTBItemImage : @"home_normal",  /* NSString and UIImage are supported*/
         kTBItemSelectedImage : @"home_highlight"  /* NSString and UIImage are supported*/
     };
     NSDictionary *secondItemsAttributes = @{
-        kTBItemTitle : @"爱看",
+        kTBItemVC : NSStringFromClass([MSYAlgorithmViewController class]),
+        kTBItemTitle : @"算法",
         kTBItemImage : @"fishpond_normal",
         kTBItemSelectedImage : @"fishpond_highlight"
     };
     
     NSDictionary *thirdItemsAttributes = @{
-        kTBItemTitle : @"商城",
+        kTBItemVC : NSStringFromClass([MSYMediaLayerViewController class]),
+        kTBItemTitle : @"Media",
         kTBItemImage : @"message_normal",
         kTBItemSelectedImage : @"message_highlight"
     };

@@ -1,0 +1,6 @@
+framework module MSYBaseClass {
+  umbrella header "MSYBaseClass-umbrella.h"
+
+  export *
+  module * { export * }
+}
