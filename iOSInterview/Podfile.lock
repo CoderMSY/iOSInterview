@@ -12,6 +12,7 @@ PODS:
     - Masonry
     - MJRefresh
   - YYText (1.0.7)
+  - ZYBannerView (1.1.6)
 
 DEPENDENCIES:
   - Aspects
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - MSYCategory
   - MSYTableView
   - YYText
+  - ZYBannerView
 
 SPEC REPOS:
   https://github.com/CoderMSY/MSYSpecs.git:
@@ -33,6 +35,7 @@ SPEC REPOS:
     - MJRefresh
     - MSYTableView
     - YYText
+    - ZYBannerView
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
@@ -44,7 +47,8 @@ SPEC CHECKSUMS:
   MSYCategory: b3f2e910f1f4ef3d36801f62080a72dd96ffec11
   MSYTableView: a0c5776f4f5eb88b5902a8abd6bcd1ea80e328b5
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZYBannerView: 7a1c76cab9a5438bf5c7529b8fc99cacb5af5898
 
-PODFILE CHECKSUM: 38d280703ef44fb218ff1dba361bd9e7c276984c
+PODFILE CHECKSUM: 9b4287bc1291b774da86ca06741274709f533003
 
 COCOAPODS: 1.11.2

@@ -1,18 +1,22 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '10.0'
 
 source 'https://cdn.cocoapods.org/'
 source 'https://github.com/CoderMSY/MSYSpecs.git'
 
 target 'iOSInterview' do
   # Comment the next line if you don't want to use dynamic frameworks
+#  install_all_flutter_pods(flutter_application_path)
   use_frameworks!
+#  pod 'Flutter', :podspec => '/Users/simonmiao/Documents/iOS/github/MyGithub/battery_level_SDK/Release/Flutter.podspec'
+
 pod 'Masonry'
 pod 'MSYTableView'
 pod 'MSYCategory'
 pod 'MSYBaseClass'
 pod 'YYText'
 pod 'Aspects'
+pod 'ZYBannerView'
 
   # Pods for iOSInterview
 

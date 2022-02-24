@@ -13,6 +13,7 @@
 #import "MSYOperationViewController.h"
 #import "MSYRuntimeViewController.h"
 #import "MSYRunloopViewController.h"
+#import "MSYAutoreleasePoolViewController.h"
 #import "MSYCollectionExampleController.h"
 
 @implementation MSYBasicPresenter
@@ -45,6 +46,15 @@
                     @{
                         kRow_title : kRowBasic_runloop,
                     },
+            ],
+            kSec_footerHeight : @(kSectionHeaderHeight_zero),
+        },
+        @{
+            kSec_headerTitle : kSecBasic_autoreleasepool,
+            kSec_rowContent : @[
+                @{
+                    kRow_title : kRowBasic_autoreleasepool,
+                }
             ],
             kSec_footerHeight : @(kSectionHeaderHeight_zero),
         },
@@ -112,10 +122,18 @@
     [self.viewController.navigationController pushViewController:ctr animated:YES];
 }
 
+- (void)pushAutoreleasePoolViewCtr {
+    MSYAutoreleasePoolViewController *ctr = [[MSYAutoreleasePoolViewController alloc] init];
+    
+    [self.viewController.navigationController pushViewController:ctr animated:YES];
+}
+
 - (void)pushCollectionExample {
     MSYCollectionExampleController *ctr = [[MSYCollectionExampleController alloc] init];
     
     [self.viewController.navigationController pushViewController:ctr animated:YES];
 }
+
+#pragma mark - other
 
 @end

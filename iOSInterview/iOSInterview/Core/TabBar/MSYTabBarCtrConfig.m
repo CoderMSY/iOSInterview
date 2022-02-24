@@ -6,10 +6,11 @@
 //
 
 #import "MSYTabBarCtrConfig.h"
-#import <MSYBaseClass/MSYNavigationController.h>
+#import "ATNavigationController.h"
 #import "MSYBasicViewController.h"
 #import "MSYAlgorithmViewController.h"
 #import "MSYMediaLayerViewController.h"
+#import "MSYAnimationListViewController.h"
 
 static NSString *const kTBItemVC = @"viewController";
 static NSString *const kTBItemTitle = @"title";
@@ -88,7 +89,8 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
         ctr.tabBarItem.title = dic[kTBItemTitle];
         ctr.tabBarItem.image = [[UIImage imageNamed:dic[kTBItemImage]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         ctr.tabBarItem.selectedImage = [[UIImage imageNamed:dic[kTBItemSelectedImage]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        MSYNavigationController *navCtr = [[MSYNavigationController alloc] initWithRootViewController:ctr];
+//        MSYNavigationController *navCtr = [[MSYNavigationController alloc] initWithRootViewController:ctr];
+        ATNavigationController *navCtr = [[ATNavigationController alloc] initWithRootViewController:ctr];
         [viewControllers addObject:navCtr];
     }
     
@@ -117,7 +119,8 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
         kTBItemSelectedImage : @"message_highlight"
     };
     NSDictionary *fourthItemsAttributes = @{
-        kTBItemTitle : @"潮玩",
+        kTBItemVC : NSStringFromClass([MSYAnimationListViewController class]),
+        kTBItemTitle : @"动画",
         kTBItemImage : @"account_normal",
         kTBItemSelectedImage : @"account_highlight"
     };

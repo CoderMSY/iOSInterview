@@ -155,6 +155,14 @@
     [self.presenter pushCollectionExample];
 }
 
+#pragma mark - other
+
+- (void)exampleOther:(MSYCommonTableRow *)rowModel {
+//    if ([rowModel.title isEqualToString:kRowBasic_flutter]) {
+//        [self.presenter pushFlutterModule];
+//    }
+}
+
 #pragma mark - MSYBasicPresenterOutput
 
 - (void)renderDataSource:(NSArray *)dataSource {
@@ -172,11 +180,17 @@
     else if ([sectionModel.headerTitle isEqualToString:kSecBasic_runtime]) {
         [self exampleRuntime:rowModel];
     }
+    else if ([sectionModel.headerTitle isEqualToString:kSecBasic_autoreleasepool]) {
+        [self.presenter pushAutoreleasePoolViewCtr];
+    }
     else if ([sectionModel.headerTitle isEqualToString:kSecBasic_image]) {
         [self exampleImage:rowModel];
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecBasic_collectionView]) {
         [self exampleCollectionView];
+    }
+    else if ([sectionModel.headerTitle isEqualToString:kSecBasic_other]) {
+        [self exampleOther:rowModel];
     }
     else {
         

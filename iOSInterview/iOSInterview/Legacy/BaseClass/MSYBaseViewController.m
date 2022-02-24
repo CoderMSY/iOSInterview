@@ -18,10 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (@available(iOS 13.0, *)) {
+        self.view.backgroundColor = [UIColor systemBackgroundColor];
+    } else {
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    
 }
 
 - (void)dealloc {
-    NSLog(@"%s", __func__);
+    NSLog(@"%s:%@", __func__, NSStringFromClass([self class]));
 }
 
 // Objective-C:InjectionIII热重载

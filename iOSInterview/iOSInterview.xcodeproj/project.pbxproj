@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		07E3ECC15E968DCECC31B9E7 /* Pods_iOSInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB80A074F4B59114FDAA9D80 /* Pods_iOSInterview.framework */; };
+		E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */; };
+		E018CEA027B0F78000A898A8 /* MSYCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */; };
+		E022D92D27C496AE008631E3 /* MSYAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D92C27C496AE008631E3 /* MSYAnimationListViewController.m */; };
+		E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93127C497F3008631E3 /* MSYOpenHole3DViewController.m */; };
+		E022D93527C4C4FC008631E3 /* ATNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93427C4C4FC008631E3 /* ATNavigationController.m */; };
+		E022D93827C4C791008631E3 /* MSYOpenHole3DBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93727C4C791008631E3 /* MSYOpenHole3DBannerViewController.m */; };
+		E022D93C27C4C985008631E3 /* MSYOpenHole3DBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93B27C4C985008631E3 /* MSYOpenHole3DBannerView.m */; };
+		E022D93F27C4D5A9008631E3 /* MSYOpenHole3DItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93E27C4D5A9008631E3 /* MSYOpenHole3DItemView.m */; };
+		E022D94327C4E1FB008631E3 /* MSYMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D94227C4E1FB008631E3 /* MSYMotionManager.m */; };
 		E0250A012719718A00604984 /* MSYCollectionExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A002719718A00604984 /* MSYCollectionExampleController.m */; };
 		E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A06271971AA00604984 /* MSYCollectionExampleView.m */; };
 		E0250A0C271973DA00604984 /* MSYCollectionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A0B271973DA00604984 /* MSYCollectionItemCell.m */; };
@@ -64,6 +73,25 @@
 /* Begin PBXFileReference section */
 		2F82A9F50D99D3D059509E72 /* Pods-iOSInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSInterview.release.xcconfig"; path = "Target Support Files/Pods-iOSInterview/Pods-iOSInterview.release.xcconfig"; sourceTree = "<group>"; };
 		9D8146CC53E2AFC8B79F99C4 /* Pods-iOSInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSInterview.debug.xcconfig"; path = "Target Support Files/Pods-iOSInterview/Pods-iOSInterview.debug.xcconfig"; sourceTree = "<group>"; };
+		E018CE9827B0CFF700A898A8 /* MSYAutoreleasePoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAutoreleasePoolViewController.h; sourceTree = "<group>"; };
+		E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAutoreleasePoolViewController.m; sourceTree = "<group>"; };
+		E018CE9E27B0F78000A898A8 /* MSYCustomModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCustomModel.h; sourceTree = "<group>"; };
+		E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCustomModel.m; sourceTree = "<group>"; };
+		E022D92B27C496AE008631E3 /* MSYAnimationListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAnimationListViewController.h; sourceTree = "<group>"; };
+		E022D92C27C496AE008631E3 /* MSYAnimationListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAnimationListViewController.m; sourceTree = "<group>"; };
+		E022D92E27C496EF008631E3 /* MSYAnimationListDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAnimationListDefine.h; sourceTree = "<group>"; };
+		E022D93027C497F3008631E3 /* MSYOpenHole3DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYOpenHole3DViewController.h; sourceTree = "<group>"; };
+		E022D93127C497F3008631E3 /* MSYOpenHole3DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYOpenHole3DViewController.m; sourceTree = "<group>"; };
+		E022D93327C4C4FC008631E3 /* ATNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATNavigationController.h; sourceTree = "<group>"; };
+		E022D93427C4C4FC008631E3 /* ATNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATNavigationController.m; sourceTree = "<group>"; };
+		E022D93627C4C791008631E3 /* MSYOpenHole3DBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYOpenHole3DBannerViewController.h; sourceTree = "<group>"; };
+		E022D93727C4C791008631E3 /* MSYOpenHole3DBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYOpenHole3DBannerViewController.m; sourceTree = "<group>"; };
+		E022D93A27C4C985008631E3 /* MSYOpenHole3DBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYOpenHole3DBannerView.h; sourceTree = "<group>"; };
+		E022D93B27C4C985008631E3 /* MSYOpenHole3DBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYOpenHole3DBannerView.m; sourceTree = "<group>"; };
+		E022D93D27C4D5A9008631E3 /* MSYOpenHole3DItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYOpenHole3DItemView.h; sourceTree = "<group>"; };
+		E022D93E27C4D5A9008631E3 /* MSYOpenHole3DItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYOpenHole3DItemView.m; sourceTree = "<group>"; };
+		E022D94127C4E1FB008631E3 /* MSYMotionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYMotionManager.h; sourceTree = "<group>"; };
+		E022D94227C4E1FB008631E3 /* MSYMotionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYMotionManager.m; sourceTree = "<group>"; };
 		E02509FF2719718A00604984 /* MSYCollectionExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCollectionExampleController.h; sourceTree = "<group>"; };
 		E0250A002719718A00604984 /* MSYCollectionExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCollectionExampleController.m; sourceTree = "<group>"; };
 		E0250A05271971AA00604984 /* MSYCollectionExampleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCollectionExampleView.h; sourceTree = "<group>"; };
@@ -201,6 +229,68 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E018CE9727B0CF9000A898A8 /* AutoreleasePool */ = {
+			isa = PBXGroup;
+			children = (
+				E018CE9827B0CFF700A898A8 /* MSYAutoreleasePoolViewController.h */,
+				E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */,
+				E018CE9E27B0F78000A898A8 /* MSYCustomModel.h */,
+				E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */,
+			);
+			path = AutoreleasePool;
+			sourceTree = "<group>";
+		};
+		E022D92927C49687008631E3 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				E022D92A27C49696008631E3 /* AnimationList */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		E022D92A27C49696008631E3 /* AnimationList */ = {
+			isa = PBXGroup;
+			children = (
+				E022D92B27C496AE008631E3 /* MSYAnimationListViewController.h */,
+				E022D92C27C496AE008631E3 /* MSYAnimationListViewController.m */,
+				E022D92E27C496EF008631E3 /* MSYAnimationListDefine.h */,
+			);
+			path = AnimationList;
+			sourceTree = "<group>";
+		};
+		E022D92F27C497E7008631E3 /* OpenHole3D */ = {
+			isa = PBXGroup;
+			children = (
+				E022D93027C497F3008631E3 /* MSYOpenHole3DViewController.h */,
+				E022D93127C497F3008631E3 /* MSYOpenHole3DViewController.m */,
+				E022D93927C4C96C008631E3 /* OpenHole3DBanner */,
+				E022D93627C4C791008631E3 /* MSYOpenHole3DBannerViewController.h */,
+				E022D93727C4C791008631E3 /* MSYOpenHole3DBannerViewController.m */,
+				E022D94027C4E1E3008631E3 /* MotionManager */,
+			);
+			path = OpenHole3D;
+			sourceTree = "<group>";
+		};
+		E022D93927C4C96C008631E3 /* OpenHole3DBanner */ = {
+			isa = PBXGroup;
+			children = (
+				E022D93A27C4C985008631E3 /* MSYOpenHole3DBannerView.h */,
+				E022D93B27C4C985008631E3 /* MSYOpenHole3DBannerView.m */,
+				E022D93D27C4D5A9008631E3 /* MSYOpenHole3DItemView.h */,
+				E022D93E27C4D5A9008631E3 /* MSYOpenHole3DItemView.m */,
+			);
+			path = OpenHole3DBanner;
+			sourceTree = "<group>";
+		};
+		E022D94027C4E1E3008631E3 /* MotionManager */ = {
+			isa = PBXGroup;
+			children = (
+				E022D94127C4E1FB008631E3 /* MSYMotionManager.h */,
+				E022D94227C4E1FB008631E3 /* MSYMotionManager.m */,
+			);
+			path = MotionManager;
+			sourceTree = "<group>";
+		};
 		E02509FD2719713600604984 /* CollectionExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +411,8 @@
 			children = (
 				E06C4EB92774211500E07EF5 /* MSYBaseViewController.h */,
 				E06C4EBA2774211500E07EF5 /* MSYBaseViewController.m */,
+				E022D93327C4C4FC008631E3 /* ATNavigationController.h */,
+				E022D93427C4C4FC008631E3 /* ATNavigationController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -495,6 +587,9 @@
 		E0C4965E26E209600068D5A7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				E022D92F27C497E7008631E3 /* OpenHole3D */,
+				E022D92927C49687008631E3 /* Animations */,
+				E018CE9727B0CF9000A898A8 /* AutoreleasePool */,
 				E0D7AC3C2772FF3600916246 /* MediaLayer */,
 				E0C65302276C6C49006C74DC /* thread */,
 				E02509FD2719713600604984 /* CollectionExample */,
@@ -869,11 +964,13 @@
 				E0C65309276C75C3006C74DC /* MSYOperation.m in Sources */,
 				E0A4BF6F26E5FCF6003459C7 /* MSYRunloopPresenter.m in Sources */,
 				E0C15B9A27717B270037CACF /* MSYRunLoopImageCell.m in Sources */,
+				E022D92D27C496AE008631E3 /* MSYAnimationListViewController.m in Sources */,
 				E0250A13271978E400604984 /* ZXPUnicode.m in Sources */,
 				E065298E2770896E00639B67 /* MSYCommonTitleImageFrameModel.m in Sources */,
 				E065297D2770759D00639B67 /* MSYThreadViewController.m in Sources */,
 				E0D7AC352772DBD700916246 /* YYSentinel.m in Sources */,
 				E06C4EC027744D4B00E07EF5 /* MSYViewCtrIntercepter.m in Sources */,
+				E022D93527C4C4FC008631E3 /* ATNavigationController.m in Sources */,
 				E0A4BF6126E5F738003459C7 /* MSYPerson.m in Sources */,
 				E0C4966926E20BB40068D5A7 /* MSYAlgorithmViewController.m in Sources */,
 				E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */,
@@ -885,6 +982,7 @@
 				E0250A012719718A00604984 /* MSYCollectionExampleController.m in Sources */,
 				E065297827701A9200639B67 /* MSYGCDViewController.m in Sources */,
 				E0C15B9E277187910037CACF /* YYFPSLabel.m in Sources */,
+				E018CEA027B0F78000A898A8 /* MSYCustomModel.m in Sources */,
 				E0D7AC492773075F00916246 /* MSYCoreGraphicsTestView.m in Sources */,
 				E0C65306276C6C6B006C74DC /* MSYOperationViewController.m in Sources */,
 				E0C4966326E20B740068D5A7 /* MSYAlgorithmPresenter.m in Sources */,
@@ -892,14 +990,20 @@
 				E0C4967526E21CF10068D5A7 /* MSYAlgorithmTool.m in Sources */,
 				E0C4969F26E32A5D0068D5A7 /* UIImage+MSYWatermark.m in Sources */,
 				E0C15BA1277187980037CACF /* YYWeakProxy.m in Sources */,
+				E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */,
+				E022D94327C4E1FB008631E3 /* MSYMotionManager.m in Sources */,
 				E065298B277088CD00639B67 /* MSYCommonTitleImageCell.m in Sources */,
 				E0A4BF7A26E5FEC0003459C7 /* MSYRunloopViewController.m in Sources */,
 				E0C496AC26E379750068D5A7 /* MSYRuntimePresenter.m in Sources */,
 				E0D7AC362772DBD700916246 /* YYTransaction.m in Sources */,
+				E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */,
+				E022D93F27C4D5A9008631E3 /* MSYOpenHole3DItemView.m in Sources */,
 				E0D7AC5127730B8800916246 /* MSYCoreGraphicsRectangularCell.m in Sources */,
 				E0C496A726E3793A0068D5A7 /* MSYRuntimeViewController.m in Sources */,
+				E022D93827C4C791008631E3 /* MSYOpenHole3DBannerViewController.m in Sources */,
 				E0D7AC342772DBD700916246 /* YYAsyncLayer.m in Sources */,
 				E0C4964526E1D48D0068D5A7 /* main.m in Sources */,
+				E022D93C27C4C985008631E3 /* MSYOpenHole3DBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1044,7 +1148,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AY9XK347CD;
+				DEVELOPMENT_TEAM = SQN84YY35D;
 				INFOPLIST_FILE = iOSInterview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1064,7 +1168,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AY9XK347CD;
+				DEVELOPMENT_TEAM = SQN84YY35D;
 				INFOPLIST_FILE = iOSInterview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

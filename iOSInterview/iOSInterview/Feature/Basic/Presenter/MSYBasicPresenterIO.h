@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)pushOperationViewCtrWithTitle:(NSString *)title;
 - (void)pushRuntimeViewCtr;
 - (void)pushRunloopViewCtr;
+- (void)pushAutoreleasePoolViewCtr;
 - (void)pushCollectionExample;
 
 @end
