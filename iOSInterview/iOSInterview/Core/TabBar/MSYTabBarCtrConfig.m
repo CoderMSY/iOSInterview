@@ -11,6 +11,7 @@
 #import "MSYAlgorithmViewController.h"
 #import "MSYMediaLayerViewController.h"
 #import "MSYAnimationListViewController.h"
+#import "MSYDataStructureListViewController.h"
 
 static NSString *const kTBItemVC = @"viewController";
 static NSString *const kTBItemTitle = @"title";
@@ -124,11 +125,19 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
         kTBItemImage : @"account_normal",
         kTBItemSelectedImage : @"account_highlight"
     };
+    NSDictionary *fiveItemsAttributes = @{
+        kTBItemVC : NSStringFromClass([MSYDataStructureListViewController class]),
+        kTBItemTitle : @"数据结构",
+        kTBItemImage : @"home_normal",
+        kTBItemSelectedImage : @"home_highlight"
+    };
+    
     NSArray *tabBarItemsAttributes = @[
         firstItemsAttributes,
         secondItemsAttributes,
         thirdItemsAttributes,
-        fourthItemsAttributes
+        fourthItemsAttributes,
+        fiveItemsAttributes
     ];
     return tabBarItemsAttributes;
 }
