@@ -17,6 +17,7 @@
 - (void)fetchDataSource {
     NSArray *titleList = @[
         kRowRunloop_thead,
+        kRowRunloop_thead_CFRunLoop,
         kRowRunloop_timer,
         kRowRunloop_monitorPerformanceLag,
         kRowRunloop_performanceOptimization,

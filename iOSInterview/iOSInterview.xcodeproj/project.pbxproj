@@ -21,6 +21,8 @@
 		E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A06271971AA00604984 /* MSYCollectionExampleView.m */; };
 		E0250A0C271973DA00604984 /* MSYCollectionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A0B271973DA00604984 /* MSYCollectionItemCell.m */; };
 		E0250A13271978E400604984 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A12271978E400604984 /* ZXPUnicode.m */; };
+		E02FCD3727CCB03A0013C8AB /* MSYCFPermanantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */; };
+		E02FCD3A27CCB2070013C8AB /* MSYThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3927CCB2070013C8AB /* MSYThread.m */; };
 		E065297827701A9200639B67 /* MSYGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E065297727701A9200639B67 /* MSYGCDViewController.m */; };
 		E065297D2770759D00639B67 /* MSYThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E065297C2770759D00639B67 /* MSYThreadViewController.m */; };
 		E065298227707D4A00639B67 /* MSYCommonTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E065298127707D4A00639B67 /* MSYCommonTitleDetailCell.m */; };
@@ -104,6 +106,10 @@
 		E0250A0B271973DA00604984 /* MSYCollectionItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCollectionItemCell.m; sourceTree = "<group>"; };
 		E0250A11271978E400604984 /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
 		E0250A12271978E400604984 /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
+		E02FCD3527CCB03A0013C8AB /* MSYCFPermanantThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCFPermanantThread.h; sourceTree = "<group>"; };
+		E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCFPermanantThread.m; sourceTree = "<group>"; };
+		E02FCD3827CCB2070013C8AB /* MSYThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYThread.h; sourceTree = "<group>"; };
+		E02FCD3927CCB2070013C8AB /* MSYThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYThread.m; sourceTree = "<group>"; };
 		E065297627701A9200639B67 /* MSYGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYGCDViewController.h; sourceTree = "<group>"; };
 		E065297727701A9200639B67 /* MSYGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYGCDViewController.m; sourceTree = "<group>"; };
 		E065297927702A6200639B67 /* MSYGCDDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYGCDDefine.h; sourceTree = "<group>"; };
@@ -507,6 +513,10 @@
 			children = (
 				E0A4BF8026E6158C003459C7 /* MSYPermanantThread.h */,
 				E0A4BF8126E6158C003459C7 /* MSYPermanantThread.m */,
+				E02FCD3527CCB03A0013C8AB /* MSYCFPermanantThread.h */,
+				E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */,
+				E02FCD3827CCB2070013C8AB /* MSYThread.h */,
+				E02FCD3927CCB2070013C8AB /* MSYThread.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1032,6 +1042,7 @@
 				E065297827701A9200639B67 /* MSYGCDViewController.m in Sources */,
 				E0C15B9E277187910037CACF /* YYFPSLabel.m in Sources */,
 				E018CEA027B0F78000A898A8 /* MSYCustomModel.m in Sources */,
+				E02FCD3A27CCB2070013C8AB /* MSYThread.m in Sources */,
 				E0D7AC492773075F00916246 /* MSYCoreGraphicsTestView.m in Sources */,
 				E0C65306276C6C6B006C74DC /* MSYOperationViewController.m in Sources */,
 				E0C4966326E20B740068D5A7 /* MSYAlgorithmPresenter.m in Sources */,
@@ -1054,6 +1065,7 @@
 				E0D7AC342772DBD700916246 /* YYAsyncLayer.m in Sources */,
 				E0C4964526E1D48D0068D5A7 /* main.m in Sources */,
 				E022D93C27C4C985008631E3 /* MSYOpenHole3DBannerView.m in Sources */,
+				E02FCD3727CCB03A0013C8AB /* MSYCFPermanantThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

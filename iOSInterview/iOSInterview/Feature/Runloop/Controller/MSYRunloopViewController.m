@@ -13,6 +13,7 @@
 
 #import "MSYRunloopPresenter.h"
 #import "MSYPermanantThread.h"
+#import "MSYCFPermanantThread.h"
 
 @interface MSYRunloopViewController () <MSYPresenterCommonOutput, MSYTableViewProtocol>
 
@@ -21,6 +22,7 @@
 
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) MSYPermanantThread *thread;
+@property (nonatomic, strong) MSYCFPermanantThread *cfThread;
 
 @end
 
@@ -61,6 +63,12 @@
     }];
 }
 
+- (void)threadCFRunLoopMethod {
+    [self.cfThread executeTask:^{
+        NSLog(@"执行任务 CFRunLoop线程保活 - %@", [NSThread currentThread]);
+    }];
+}
+
 - (void)timerMethod {
     if (!_timer) {
         //NSDefaultRunLoopMode: 默认模式
@@ -94,6 +102,9 @@
     MSYCommonTableRow *rowModel = sectionModel.rows[indexPath.row];
     if ([rowModel.title isEqualToString:kRowRunloop_thead]) {
         [self threadMethod];
+    }
+    else if ([rowModel.title isEqualToString:kRowRunloop_thead_CFRunLoop]) {
+        [self threadCFRunLoopMethod];
     }
     else if ([rowModel.title isEqualToString:kRowRunloop_timer]) {
         [self timerMethod];
@@ -144,6 +155,13 @@
         _thread = [[MSYPermanantThread alloc] init];
     }
     return _thread;
+}
+
+- (MSYCFPermanantThread *)cfThread {
+    if (!_cfThread) {
+        _cfThread = [[MSYCFPermanantThread alloc] init];
+    }
+    return _cfThread;
 }
 
 @end

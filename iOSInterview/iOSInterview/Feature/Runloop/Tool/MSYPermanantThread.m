@@ -6,18 +6,7 @@
 //
 
 #import "MSYPermanantThread.h"
-
-@interface MSYThread : NSThread
-
-@end
-
-@implementation MSYThread
-
-- (void)dealloc {
-    NSLog(@"%s", __func__);
-}
-
-@end
+#import "MSYThread.h"
 
 @interface MSYPermanantThread()
 
@@ -41,6 +30,9 @@
             
             while (weakSelf && !weakSelf.isStopped) {
                 [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+                
+                //RunLoop的run方法是无限循环，无法停止，适合用于开启一个永不销毁的线程
+//                [[NSRunLoop currentRunLoop] run];
             }
         }];
         
@@ -70,7 +62,7 @@
     if (!_innerThread) {
         return;
     }
-    
+    //waitUntilDone传NO有时可能会崩溃，传NO即dealloc和stop会同时执行，即dealloc执行完了，控制器销毁，stop还在可能在访问self，导致坏内存访问
     [self performSelector:@selector(__stop) onThread:self.innerThread withObject:nil waitUntilDone:YES];
     
     NSLog(@"串行执行 阻塞:%s", __func__);
