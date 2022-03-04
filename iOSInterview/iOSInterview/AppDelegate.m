@@ -8,10 +8,14 @@
 #import "AppDelegate.h"
 #import "MSYTabBarCtrConfig.h"
 #import "YYFPSLabel.h"
+#import "MSYAudioPlayer.h"
+
+static NSString *const kBgTaskName = @"com.apple.ios.AppRunInBackground";
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong) MSYTabBarCtrConfig *tabBarCtrConfig;
+@property (nonatomic, assign) UIBackgroundTaskIdentifier bgTaskIdentifier;
 
 @end
 
@@ -44,6 +48,27 @@
 #endif
 }
 
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    if ([MSYAudioPlayer sharedInstance].needRunInBackground) {
+//        [[MSYAudioPlayer sharedInstance].player pause];
+    }
+    
+    [[UIApplication sharedApplication] endBackgroundTask:self.bgTaskIdentifier];
+}
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    self.bgTaskIdentifier = [[UIApplication sharedApplication] beginBackgroundTaskWithName:kBgTaskName expirationHandler:^{
+        if (self.bgTaskIdentifier != UIBackgroundTaskInvalid) {
+            if ([MSYAudioPlayer sharedInstance].needRunInBackground) {
+                if ([MSYAudioPlayer sharedInstance].player.isPlaying) {
+                    [[MSYAudioPlayer sharedInstance].player play];
+                }
+            }
+            
+            [[UIApplication sharedApplication] endBackgroundTask:self.bgTaskIdentifier];
+            self.bgTaskIdentifier = UIBackgroundTaskInvalid;
+        }
+    }];
+}
 
 @end

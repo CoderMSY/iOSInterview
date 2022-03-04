@@ -10,6 +10,11 @@
 		07E3ECC15E968DCECC31B9E7 /* Pods_iOSInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB80A074F4B59114FDAA9D80 /* Pods_iOSInterview.framework */; };
 		E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */; };
 		E018CEA027B0F78000A898A8 /* MSYCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */; };
+		E018F43C27CE122100A3B0B0 /* MSYFeatureListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F43B27CE122100A3B0B0 /* MSYFeatureListViewController.m */; };
+		E018F44227CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F44127CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m */; };
+		E018F44727CE15EB00A3B0B0 /* MSYPlayAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F44627CE15EB00A3B0B0 /* MSYPlayAudioViewController.m */; };
+		E018F44A27CE163300A3B0B0 /* MSYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F44927CE163300A3B0B0 /* MSYAudioPlayer.m */; };
+		E018F44D27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E018F44C27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 */; };
 		E022D92D27C496AE008631E3 /* MSYAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D92C27C496AE008631E3 /* MSYAnimationListViewController.m */; };
 		E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93127C497F3008631E3 /* MSYOpenHole3DViewController.m */; };
 		E022D93527C4C4FC008631E3 /* ATNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E022D93427C4C4FC008631E3 /* ATNavigationController.m */; };
@@ -23,6 +28,8 @@
 		E0250A13271978E400604984 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A12271978E400604984 /* ZXPUnicode.m */; };
 		E02FCD3727CCB03A0013C8AB /* MSYCFPermanantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */; };
 		E02FCD3A27CCB2070013C8AB /* MSYThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3927CCB2070013C8AB /* MSYThread.m */; };
+		E048C6C427CE595500556491 /* MSYProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E048C6C327CE595500556491 /* MSYProxy.m */; };
+		E048C6C727CE5EEF00556491 /* MSYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E048C6C627CE5EEF00556491 /* MSYLocationManager.m */; };
 		E065297827701A9200639B67 /* MSYGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E065297727701A9200639B67 /* MSYGCDViewController.m */; };
 		E065297D2770759D00639B67 /* MSYThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E065297C2770759D00639B67 /* MSYThreadViewController.m */; };
 		E065298227707D4A00639B67 /* MSYCommonTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E065298127707D4A00639B67 /* MSYCommonTitleDetailCell.m */; };
@@ -83,6 +90,17 @@
 		E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAutoreleasePoolViewController.m; sourceTree = "<group>"; };
 		E018CE9E27B0F78000A898A8 /* MSYCustomModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCustomModel.h; sourceTree = "<group>"; };
 		E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCustomModel.m; sourceTree = "<group>"; };
+		E018F43A27CE122100A3B0B0 /* MSYFeatureListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYFeatureListViewController.h; sourceTree = "<group>"; };
+		E018F43B27CE122100A3B0B0 /* MSYFeatureListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYFeatureListViewController.m; sourceTree = "<group>"; };
+		E018F43D27CE123600A3B0B0 /* MSYFeatureListDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYFeatureListDefine.h; sourceTree = "<group>"; };
+		E018F44027CE131200A3B0B0 /* MSYBgKeepAliveListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBgKeepAliveListViewController.h; sourceTree = "<group>"; };
+		E018F44127CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBgKeepAliveListViewController.m; sourceTree = "<group>"; };
+		E018F44327CE13DD00A3B0B0 /* MSYBgKeepAliveListDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBgKeepAliveListDefine.h; sourceTree = "<group>"; };
+		E018F44527CE15EB00A3B0B0 /* MSYPlayAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYPlayAudioViewController.h; sourceTree = "<group>"; };
+		E018F44627CE15EB00A3B0B0 /* MSYPlayAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYPlayAudioViewController.m; sourceTree = "<group>"; };
+		E018F44827CE163300A3B0B0 /* MSYAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAudioPlayer.h; sourceTree = "<group>"; };
+		E018F44927CE163300A3B0B0 /* MSYAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAudioPlayer.m; sourceTree = "<group>"; };
+		E018F44C27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SomethingJustLikeThis.mp3; sourceTree = "<group>"; };
 		E022D92B27C496AE008631E3 /* MSYAnimationListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAnimationListViewController.h; sourceTree = "<group>"; };
 		E022D92C27C496AE008631E3 /* MSYAnimationListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAnimationListViewController.m; sourceTree = "<group>"; };
 		E022D92E27C496EF008631E3 /* MSYAnimationListDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAnimationListDefine.h; sourceTree = "<group>"; };
@@ -110,6 +128,10 @@
 		E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCFPermanantThread.m; sourceTree = "<group>"; };
 		E02FCD3827CCB2070013C8AB /* MSYThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYThread.h; sourceTree = "<group>"; };
 		E02FCD3927CCB2070013C8AB /* MSYThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYThread.m; sourceTree = "<group>"; };
+		E048C6C227CE595500556491 /* MSYProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYProxy.h; sourceTree = "<group>"; };
+		E048C6C327CE595500556491 /* MSYProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYProxy.m; sourceTree = "<group>"; };
+		E048C6C527CE5EEF00556491 /* MSYLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYLocationManager.h; sourceTree = "<group>"; };
+		E048C6C627CE5EEF00556491 /* MSYLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYLocationManager.m; sourceTree = "<group>"; };
 		E065297627701A9200639B67 /* MSYGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYGCDViewController.h; sourceTree = "<group>"; };
 		E065297727701A9200639B67 /* MSYGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYGCDViewController.m; sourceTree = "<group>"; };
 		E065297927702A6200639B67 /* MSYGCDDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYGCDDefine.h; sourceTree = "<group>"; };
@@ -257,6 +279,68 @@
 				E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */,
 			);
 			path = AutoreleasePool;
+			sourceTree = "<group>";
+		};
+		E018F43827CE110300A3B0B0 /* FeatureList */ = {
+			isa = PBXGroup;
+			children = (
+				E018F43E27CE12C200A3B0B0 /* BgKeepAlive */,
+				E018F43927CE11E700A3B0B0 /* FeatureList */,
+			);
+			path = FeatureList;
+			sourceTree = "<group>";
+		};
+		E018F43927CE11E700A3B0B0 /* FeatureList */ = {
+			isa = PBXGroup;
+			children = (
+				E018F43A27CE122100A3B0B0 /* MSYFeatureListViewController.h */,
+				E018F43B27CE122100A3B0B0 /* MSYFeatureListViewController.m */,
+				E018F43D27CE123600A3B0B0 /* MSYFeatureListDefine.h */,
+			);
+			path = FeatureList;
+			sourceTree = "<group>";
+		};
+		E018F43E27CE12C200A3B0B0 /* BgKeepAlive */ = {
+			isa = PBXGroup;
+			children = (
+				E018F44427CE154B00A3B0B0 /* PlayAudio */,
+				E018F43F27CE130100A3B0B0 /* Controller */,
+			);
+			path = BgKeepAlive;
+			sourceTree = "<group>";
+		};
+		E018F43F27CE130100A3B0B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E018F44027CE131200A3B0B0 /* MSYBgKeepAliveListViewController.h */,
+				E018F44127CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m */,
+				E018F44327CE13DD00A3B0B0 /* MSYBgKeepAliveListDefine.h */,
+				E048C6C227CE595500556491 /* MSYProxy.h */,
+				E048C6C327CE595500556491 /* MSYProxy.m */,
+				E048C6C527CE5EEF00556491 /* MSYLocationManager.h */,
+				E048C6C627CE5EEF00556491 /* MSYLocationManager.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E018F44427CE154B00A3B0B0 /* PlayAudio */ = {
+			isa = PBXGroup;
+			children = (
+				E018F44527CE15EB00A3B0B0 /* MSYPlayAudioViewController.h */,
+				E018F44627CE15EB00A3B0B0 /* MSYPlayAudioViewController.m */,
+				E018F44827CE163300A3B0B0 /* MSYAudioPlayer.h */,
+				E018F44927CE163300A3B0B0 /* MSYAudioPlayer.m */,
+				E018F44B27CE16E800A3B0B0 /* Resource */,
+			);
+			path = PlayAudio;
+			sourceTree = "<group>";
+		};
+		E018F44B27CE16E800A3B0B0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E018F44C27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		E022D92927C49687008631E3 /* Animations */ = {
@@ -611,6 +695,7 @@
 		E0C4965E26E209600068D5A7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				E018F43827CE110300A3B0B0 /* FeatureList */,
 				E0C922D427C781A200848707 /* DataStructure */,
 				E022D92927C49687008631E3 /* Animations */,
 				E018CE9727B0CF9000A898A8 /* AutoreleasePool */,
@@ -948,6 +1033,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E018F44D27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 in Resources */,
 				E0C4964226E1D48D0068D5A7 /* LaunchScreen.storyboard in Resources */,
 				E0C4963F26E1D48D0068D5A7 /* Assets.xcassets in Resources */,
 				E0C4963D26E1D4880068D5A7 /* Main.storyboard in Resources */,
@@ -1011,6 +1097,7 @@
 				E0C15B9727717A840037CACF /* MSYRunLoopImageViewController.m in Sources */,
 				E0D7AC402772FFF700916246 /* MSYMediaLayerViewController.m in Sources */,
 				E0A4BF6726E5F851003459C7 /* NSObject+MSYJson.m in Sources */,
+				E048C6C727CE5EEF00556491 /* MSYLocationManager.m in Sources */,
 				E0C4967C26E310950068D5A7 /* MSYBasicPresenter.m in Sources */,
 				E0C922E327C7844000848707 /* MSYSingleLinkedNode.m in Sources */,
 				E0C4963A26E1D4880068D5A7 /* ViewController.m in Sources */,
@@ -1028,6 +1115,7 @@
 				E065298E2770896E00639B67 /* MSYCommonTitleImageFrameModel.m in Sources */,
 				E065297D2770759D00639B67 /* MSYThreadViewController.m in Sources */,
 				E0D7AC352772DBD700916246 /* YYSentinel.m in Sources */,
+				E018F43C27CE122100A3B0B0 /* MSYFeatureListViewController.m in Sources */,
 				E06C4EC027744D4B00E07EF5 /* MSYViewCtrIntercepter.m in Sources */,
 				E022D93527C4C4FC008631E3 /* ATNavigationController.m in Sources */,
 				E0A4BF6126E5F738003459C7 /* MSYPerson.m in Sources */,
@@ -1037,6 +1125,7 @@
 				E06C4EC32774542B00E07EF5 /* UIViewController+MSYHookHelper.m in Sources */,
 				E065298527707E1000639B67 /* MSYCommonTitleDetailFrameModel.m in Sources */,
 				E0C4963426E1D4880068D5A7 /* AppDelegate.m in Sources */,
+				E018F44A27CE163300A3B0B0 /* MSYAudioPlayer.m in Sources */,
 				E0C65312276C942A006C74DC /* MSYOperationFooterView.m in Sources */,
 				E0250A012719718A00604984 /* MSYCollectionExampleController.m in Sources */,
 				E065297827701A9200639B67 /* MSYGCDViewController.m in Sources */,
@@ -1049,11 +1138,14 @@
 				E0D7AC462773048300916246 /* MSYCoreGraphicsViewController.m in Sources */,
 				E0C4967526E21CF10068D5A7 /* MSYAlgorithmTool.m in Sources */,
 				E0C4969F26E32A5D0068D5A7 /* UIImage+MSYWatermark.m in Sources */,
+				E048C6C427CE595500556491 /* MSYProxy.m in Sources */,
 				E0C15BA1277187980037CACF /* YYWeakProxy.m in Sources */,
 				E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */,
 				E022D94327C4E1FB008631E3 /* MSYMotionManager.m in Sources */,
 				E065298B277088CD00639B67 /* MSYCommonTitleImageCell.m in Sources */,
 				E0A4BF7A26E5FEC0003459C7 /* MSYRunloopViewController.m in Sources */,
+				E018F44227CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m in Sources */,
+				E018F44727CE15EB00A3B0B0 /* MSYPlayAudioViewController.m in Sources */,
 				E0C496AC26E379750068D5A7 /* MSYRuntimePresenter.m in Sources */,
 				E0D7AC362772DBD700916246 /* YYTransaction.m in Sources */,
 				E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */,

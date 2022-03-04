@@ -12,6 +12,7 @@
 #import "MSYMediaLayerViewController.h"
 #import "MSYAnimationListViewController.h"
 #import "MSYDataStructureListViewController.h"
+#import "MSYFeatureListViewController.h"
 
 static NSString *const kTBItemVC = @"viewController";
 static NSString *const kTBItemTitle = @"title";
@@ -100,44 +101,51 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
 
 
 - (NSArray *)tabBarItemsAttributes {
-    NSDictionary *firstItemsAttributes = @{
+    NSDictionary *basicItemsAttributes = @{
         kTBItemVC : NSStringFromClass([MSYBasicViewController class]),
         kTBItemTitle : @"基础",
         kTBItemImage : @"home_normal",  /* NSString and UIImage are supported*/
         kTBItemSelectedImage : @"home_highlight"  /* NSString and UIImage are supported*/
     };
-    NSDictionary *secondItemsAttributes = @{
+    NSDictionary *algorithmItemsAttributes = @{
         kTBItemVC : NSStringFromClass([MSYAlgorithmViewController class]),
         kTBItemTitle : @"算法",
         kTBItemImage : @"fishpond_normal",
         kTBItemSelectedImage : @"fishpond_highlight"
     };
     
-    NSDictionary *thirdItemsAttributes = @{
+    NSDictionary *mediaItemsAttributes = @{
         kTBItemVC : NSStringFromClass([MSYMediaLayerViewController class]),
         kTBItemTitle : @"Media",
         kTBItemImage : @"message_normal",
         kTBItemSelectedImage : @"message_highlight"
     };
-    NSDictionary *fourthItemsAttributes = @{
+    NSDictionary *animationItemsAttributes = @{
         kTBItemVC : NSStringFromClass([MSYAnimationListViewController class]),
         kTBItemTitle : @"动画",
         kTBItemImage : @"account_normal",
         kTBItemSelectedImage : @"account_highlight"
     };
-    NSDictionary *fiveItemsAttributes = @{
+    NSDictionary *dataStructureItemsAttributes = @{
         kTBItemVC : NSStringFromClass([MSYDataStructureListViewController class]),
         kTBItemTitle : @"数据结构",
         kTBItemImage : @"home_normal",
         kTBItemSelectedImage : @"home_highlight"
     };
+    NSDictionary *featureItemsAttributes = @{
+        kTBItemVC : NSStringFromClass([MSYFeatureListViewController class]),
+        kTBItemTitle : @"功能",
+        kTBItemImage : @"home_normal",
+        kTBItemSelectedImage : @"home_highlight"
+    };
     
     NSArray *tabBarItemsAttributes = @[
-        firstItemsAttributes,
-        secondItemsAttributes,
-        thirdItemsAttributes,
-        fourthItemsAttributes,
-        fiveItemsAttributes
+        basicItemsAttributes,
+        featureItemsAttributes,
+        dataStructureItemsAttributes,
+        algorithmItemsAttributes,
+        animationItemsAttributes,
+        mediaItemsAttributes,
     ];
     return tabBarItemsAttributes;
 }
