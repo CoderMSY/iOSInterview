@@ -13,6 +13,7 @@
 #import "MSYAnimationListViewController.h"
 #import "MSYDataStructureListViewController.h"
 #import "MSYFeatureListViewController.h"
+#import "MSYDesignPatternListViewController.h"
 
 static NSString *const kTBItemVC = @"viewController";
 static NSString *const kTBItemTitle = @"title";
@@ -139,9 +140,17 @@ static NSString *const kTBItemSelectedImage = @"selectedImage";
         kTBItemSelectedImage : @"home_highlight"
     };
     
+    NSDictionary *designPatternItemsAttributes = @{
+        kTBItemVC : NSStringFromClass([MSYDesignPatternListViewController class]),
+        kTBItemTitle : @"设计模式",
+        kTBItemImage : @"home_normal",
+        kTBItemSelectedImage : @"home_highlight"
+    };
+    
     NSArray *tabBarItemsAttributes = @[
         basicItemsAttributes,
         featureItemsAttributes,
+        designPatternItemsAttributes,
         dataStructureItemsAttributes,
         algorithmItemsAttributes,
         animationItemsAttributes,

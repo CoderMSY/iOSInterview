@@ -26,6 +26,27 @@
 		E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A06271971AA00604984 /* MSYCollectionExampleView.m */; };
 		E0250A0C271973DA00604984 /* MSYCollectionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A0B271973DA00604984 /* MSYCollectionItemCell.m */; };
 		E0250A13271978E400604984 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0250A12271978E400604984 /* ZXPUnicode.m */; };
+		E02868B127D1B705009F6631 /* MSYDesignPatternListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868B027D1B705009F6631 /* MSYDesignPatternListViewController.m */; };
+		E02868B927D1B8E6009F6631 /* MSYSimpleFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868B827D1B8E6009F6631 /* MSYSimpleFactoryViewController.m */; };
+		E02868BC27D1BCDC009F6631 /* MSYSimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868BB27D1BCDC009F6631 /* MSYSimpleFactory.m */; };
+		E02868C027D1BE19009F6631 /* MSYCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868BF27D1BE19009F6631 /* MSYCar.m */; };
+		E02868C327D1BE97009F6631 /* MSYBenzSportCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868C227D1BE97009F6631 /* MSYBenzSportCar.m */; };
+		E02868C627D1BECF009F6631 /* MSYBenzBusinessCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868C527D1BECF009F6631 /* MSYBenzBusinessCar.m */; };
+		E02868C927D1BEF0009F6631 /* MSYBmwBusinessCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868C827D1BEF0009F6631 /* MSYBmwBusinessCar.m */; };
+		E02868CC27D1BF0B009F6631 /* MSYAudiBusinessCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868CB27D1BF0B009F6631 /* MSYAudiBusinessCar.m */; };
+		E02868CF27D1BF25009F6631 /* MSYBmwSportCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868CE27D1BF25009F6631 /* MSYBmwSportCar.m */; };
+		E02868D227D1BF36009F6631 /* MSYAudiSportCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868D127D1BF36009F6631 /* MSYAudiSportCar.m */; };
+		E02868D627D1C457009F6631 /* MSYMethodFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868D527D1C457009F6631 /* MSYMethodFactoryViewController.m */; };
+		E02868D927D1C46B009F6631 /* MSYMethodFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868D827D1C46B009F6631 /* MSYMethodFactory.m */; };
+		E02868DC27D1C61E009F6631 /* MSYBenzFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868DB27D1C61E009F6631 /* MSYBenzFactory.m */; };
+		E02868DF27D1CA82009F6631 /* MSYBmwFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868DE27D1CA82009F6631 /* MSYBmwFactory.m */; };
+		E02868E227D1CB20009F6631 /* MSYAudiFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868E127D1CB20009F6631 /* MSYAudiFactory.m */; };
+		E02868E627D1CBCD009F6631 /* MSYAbstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868E527D1CBCD009F6631 /* MSYAbstractFactoryViewController.m */; };
+		E02868EF27D1DA4D009F6631 /* MSYAbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868EE27D1DA4D009F6631 /* MSYAbstractFactory.m */; };
+		E02868F227D1DC1A009F6631 /* MSYBaseCarImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868F127D1DC1A009F6631 /* MSYBaseCarImpl.m */; };
+		E02868F527D1DC36009F6631 /* MSYBenzCarImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868F427D1DC36009F6631 /* MSYBenzCarImpl.m */; };
+		E02868F827D1DC40009F6631 /* MSYBmwCarImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868F727D1DC40009F6631 /* MSYBmwCarImpl.m */; };
+		E02868FB27D1DD7F009F6631 /* MSYAudiCarImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E02868FA27D1DD7F009F6631 /* MSYAudiCarImpl.m */; };
 		E02FCD3727CCB03A0013C8AB /* MSYCFPermanantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */; };
 		E02FCD3A27CCB2070013C8AB /* MSYThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3927CCB2070013C8AB /* MSYThread.m */; };
 		E048C6C427CE595500556491 /* MSYProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E048C6C327CE595500556491 /* MSYProxy.m */; };
@@ -124,6 +145,49 @@
 		E0250A0B271973DA00604984 /* MSYCollectionItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCollectionItemCell.m; sourceTree = "<group>"; };
 		E0250A11271978E400604984 /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
 		E0250A12271978E400604984 /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
+		E02868AF27D1B705009F6631 /* MSYDesignPatternListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDesignPatternListViewController.h; sourceTree = "<group>"; };
+		E02868B027D1B705009F6631 /* MSYDesignPatternListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDesignPatternListViewController.m; sourceTree = "<group>"; };
+		E02868B327D1B750009F6631 /* MSYDesignPatternListDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDesignPatternListDefine.h; sourceTree = "<group>"; };
+		E02868B727D1B8E6009F6631 /* MSYSimpleFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYSimpleFactoryViewController.h; sourceTree = "<group>"; };
+		E02868B827D1B8E6009F6631 /* MSYSimpleFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYSimpleFactoryViewController.m; sourceTree = "<group>"; };
+		E02868BA27D1BCDC009F6631 /* MSYSimpleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYSimpleFactory.h; sourceTree = "<group>"; };
+		E02868BB27D1BCDC009F6631 /* MSYSimpleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYSimpleFactory.m; sourceTree = "<group>"; };
+		E02868BE27D1BE19009F6631 /* MSYCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCar.h; sourceTree = "<group>"; };
+		E02868BF27D1BE19009F6631 /* MSYCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCar.m; sourceTree = "<group>"; };
+		E02868C127D1BE97009F6631 /* MSYBenzSportCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBenzSportCar.h; sourceTree = "<group>"; };
+		E02868C227D1BE97009F6631 /* MSYBenzSportCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBenzSportCar.m; sourceTree = "<group>"; };
+		E02868C427D1BECF009F6631 /* MSYBenzBusinessCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBenzBusinessCar.h; sourceTree = "<group>"; };
+		E02868C527D1BECF009F6631 /* MSYBenzBusinessCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBenzBusinessCar.m; sourceTree = "<group>"; };
+		E02868C727D1BEF0009F6631 /* MSYBmwBusinessCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBmwBusinessCar.h; sourceTree = "<group>"; };
+		E02868C827D1BEF0009F6631 /* MSYBmwBusinessCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBmwBusinessCar.m; sourceTree = "<group>"; };
+		E02868CA27D1BF0B009F6631 /* MSYAudiBusinessCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAudiBusinessCar.h; sourceTree = "<group>"; };
+		E02868CB27D1BF0B009F6631 /* MSYAudiBusinessCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAudiBusinessCar.m; sourceTree = "<group>"; };
+		E02868CD27D1BF25009F6631 /* MSYBmwSportCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBmwSportCar.h; sourceTree = "<group>"; };
+		E02868CE27D1BF25009F6631 /* MSYBmwSportCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBmwSportCar.m; sourceTree = "<group>"; };
+		E02868D027D1BF36009F6631 /* MSYAudiSportCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAudiSportCar.h; sourceTree = "<group>"; };
+		E02868D127D1BF36009F6631 /* MSYAudiSportCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAudiSportCar.m; sourceTree = "<group>"; };
+		E02868D427D1C457009F6631 /* MSYMethodFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYMethodFactoryViewController.h; sourceTree = "<group>"; };
+		E02868D527D1C457009F6631 /* MSYMethodFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYMethodFactoryViewController.m; sourceTree = "<group>"; };
+		E02868D727D1C46B009F6631 /* MSYMethodFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYMethodFactory.h; sourceTree = "<group>"; };
+		E02868D827D1C46B009F6631 /* MSYMethodFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYMethodFactory.m; sourceTree = "<group>"; };
+		E02868DA27D1C61E009F6631 /* MSYBenzFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBenzFactory.h; sourceTree = "<group>"; };
+		E02868DB27D1C61E009F6631 /* MSYBenzFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBenzFactory.m; sourceTree = "<group>"; };
+		E02868DD27D1CA82009F6631 /* MSYBmwFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBmwFactory.h; sourceTree = "<group>"; };
+		E02868DE27D1CA82009F6631 /* MSYBmwFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBmwFactory.m; sourceTree = "<group>"; };
+		E02868E027D1CB20009F6631 /* MSYAudiFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAudiFactory.h; sourceTree = "<group>"; };
+		E02868E127D1CB20009F6631 /* MSYAudiFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAudiFactory.m; sourceTree = "<group>"; };
+		E02868E427D1CBCD009F6631 /* MSYAbstractFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAbstractFactoryViewController.h; sourceTree = "<group>"; };
+		E02868E527D1CBCD009F6631 /* MSYAbstractFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAbstractFactoryViewController.m; sourceTree = "<group>"; };
+		E02868ED27D1DA4D009F6631 /* MSYAbstractFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAbstractFactory.h; sourceTree = "<group>"; };
+		E02868EE27D1DA4D009F6631 /* MSYAbstractFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAbstractFactory.m; sourceTree = "<group>"; };
+		E02868F027D1DC1A009F6631 /* MSYBaseCarImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBaseCarImpl.h; sourceTree = "<group>"; };
+		E02868F127D1DC1A009F6631 /* MSYBaseCarImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBaseCarImpl.m; sourceTree = "<group>"; };
+		E02868F327D1DC36009F6631 /* MSYBenzCarImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBenzCarImpl.h; sourceTree = "<group>"; };
+		E02868F427D1DC36009F6631 /* MSYBenzCarImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBenzCarImpl.m; sourceTree = "<group>"; };
+		E02868F627D1DC40009F6631 /* MSYBmwCarImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBmwCarImpl.h; sourceTree = "<group>"; };
+		E02868F727D1DC40009F6631 /* MSYBmwCarImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBmwCarImpl.m; sourceTree = "<group>"; };
+		E02868F927D1DD7F009F6631 /* MSYAudiCarImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAudiCarImpl.h; sourceTree = "<group>"; };
+		E02868FA27D1DD7F009F6631 /* MSYAudiCarImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAudiCarImpl.m; sourceTree = "<group>"; };
 		E02FCD3527CCB03A0013C8AB /* MSYCFPermanantThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCFPermanantThread.h; sourceTree = "<group>"; };
 		E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCFPermanantThread.m; sourceTree = "<group>"; };
 		E02FCD3827CCB2070013C8AB /* MSYThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYThread.h; sourceTree = "<group>"; };
@@ -450,6 +514,112 @@
 			path = ZXPUnicode;
 			sourceTree = "<group>";
 		};
+		E02868AD27D1B6CF009F6631 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				E02868B427D1B89D009F6631 /* Creational */,
+				E02868AE27D1B6E0009F6631 /* DesignPatternList */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		E02868AE27D1B6E0009F6631 /* DesignPatternList */ = {
+			isa = PBXGroup;
+			children = (
+				E02868AF27D1B705009F6631 /* MSYDesignPatternListViewController.h */,
+				E02868B027D1B705009F6631 /* MSYDesignPatternListViewController.m */,
+				E02868B327D1B750009F6631 /* MSYDesignPatternListDefine.h */,
+			);
+			path = DesignPatternList;
+			sourceTree = "<group>";
+		};
+		E02868B427D1B89D009F6631 /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+				E02868B527D1B8B0009F6631 /* FactoryPattern */,
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		E02868B527D1B8B0009F6631 /* FactoryPattern */ = {
+			isa = PBXGroup;
+			children = (
+				E02868BD27D1BDF9009F6631 /* Model */,
+				E02868B627D1B8DC009F6631 /* SimpleFactory */,
+				E02868D327D1C434009F6631 /* MethodFactory */,
+				E02868E327D1CBB1009F6631 /* AbstractFactory */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
+		E02868B627D1B8DC009F6631 /* SimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E02868B727D1B8E6009F6631 /* MSYSimpleFactoryViewController.h */,
+				E02868B827D1B8E6009F6631 /* MSYSimpleFactoryViewController.m */,
+				E02868BA27D1BCDC009F6631 /* MSYSimpleFactory.h */,
+				E02868BB27D1BCDC009F6631 /* MSYSimpleFactory.m */,
+			);
+			path = SimpleFactory;
+			sourceTree = "<group>";
+		};
+		E02868BD27D1BDF9009F6631 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E02868BE27D1BE19009F6631 /* MSYCar.h */,
+				E02868BF27D1BE19009F6631 /* MSYCar.m */,
+				E02868C127D1BE97009F6631 /* MSYBenzSportCar.h */,
+				E02868C227D1BE97009F6631 /* MSYBenzSportCar.m */,
+				E02868C427D1BECF009F6631 /* MSYBenzBusinessCar.h */,
+				E02868C527D1BECF009F6631 /* MSYBenzBusinessCar.m */,
+				E02868CD27D1BF25009F6631 /* MSYBmwSportCar.h */,
+				E02868CE27D1BF25009F6631 /* MSYBmwSportCar.m */,
+				E02868C727D1BEF0009F6631 /* MSYBmwBusinessCar.h */,
+				E02868C827D1BEF0009F6631 /* MSYBmwBusinessCar.m */,
+				E02868D027D1BF36009F6631 /* MSYAudiSportCar.h */,
+				E02868D127D1BF36009F6631 /* MSYAudiSportCar.m */,
+				E02868CA27D1BF0B009F6631 /* MSYAudiBusinessCar.h */,
+				E02868CB27D1BF0B009F6631 /* MSYAudiBusinessCar.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E02868D327D1C434009F6631 /* MethodFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E02868D427D1C457009F6631 /* MSYMethodFactoryViewController.h */,
+				E02868D527D1C457009F6631 /* MSYMethodFactoryViewController.m */,
+				E02868D727D1C46B009F6631 /* MSYMethodFactory.h */,
+				E02868D827D1C46B009F6631 /* MSYMethodFactory.m */,
+				E02868DA27D1C61E009F6631 /* MSYBenzFactory.h */,
+				E02868DB27D1C61E009F6631 /* MSYBenzFactory.m */,
+				E02868DD27D1CA82009F6631 /* MSYBmwFactory.h */,
+				E02868DE27D1CA82009F6631 /* MSYBmwFactory.m */,
+				E02868E027D1CB20009F6631 /* MSYAudiFactory.h */,
+				E02868E127D1CB20009F6631 /* MSYAudiFactory.m */,
+			);
+			path = MethodFactory;
+			sourceTree = "<group>";
+		};
+		E02868E327D1CBB1009F6631 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E02868E427D1CBCD009F6631 /* MSYAbstractFactoryViewController.h */,
+				E02868E527D1CBCD009F6631 /* MSYAbstractFactoryViewController.m */,
+				E02868ED27D1DA4D009F6631 /* MSYAbstractFactory.h */,
+				E02868EE27D1DA4D009F6631 /* MSYAbstractFactory.m */,
+				E02868F027D1DC1A009F6631 /* MSYBaseCarImpl.h */,
+				E02868F127D1DC1A009F6631 /* MSYBaseCarImpl.m */,
+				E02868F327D1DC36009F6631 /* MSYBenzCarImpl.h */,
+				E02868F427D1DC36009F6631 /* MSYBenzCarImpl.m */,
+				E02868F627D1DC40009F6631 /* MSYBmwCarImpl.h */,
+				E02868F727D1DC40009F6631 /* MSYBmwCarImpl.m */,
+				E02868F927D1DD7F009F6631 /* MSYAudiCarImpl.h */,
+				E02868FA27D1DD7F009F6631 /* MSYAudiCarImpl.m */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
 		E065297527701A7600639B67 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -695,6 +865,7 @@
 		E0C4965E26E209600068D5A7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				E02868AD27D1B6CF009F6631 /* DesignPattern */,
 				E018F43827CE110300A3B0B0 /* FeatureList */,
 				E0C922D427C781A200848707 /* DataStructure */,
 				E022D92927C49687008631E3 /* Animations */,
@@ -1090,6 +1261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A4BF8226E6158C003459C7 /* MSYPermanantThread.m in Sources */,
+				E02868CC27D1BF0B009F6631 /* MSYAudiBusinessCar.m in Sources */,
 				E0C4965926E206B40068D5A7 /* MSYTabBarCtrConfig.m in Sources */,
 				E0D7AC5427730F0C00916246 /* MSYCoreGraphicsLineView.m in Sources */,
 				E0250A0C271973DA00604984 /* MSYCollectionItemCell.m in Sources */,
@@ -1103,12 +1275,17 @@
 				E0C4963A26E1D4880068D5A7 /* ViewController.m in Sources */,
 				E0C922E027C782DF00848707 /* MSYHashTable.m in Sources */,
 				E0C4968226E310AE0068D5A7 /* MSYBasicViewController.m in Sources */,
+				E02868E227D1CB20009F6631 /* MSYAudiFactory.m in Sources */,
 				E06C4EBB2774211500E07EF5 /* MSYBaseViewController.m in Sources */,
+				E02868C927D1BEF0009F6631 /* MSYBmwBusinessCar.m in Sources */,
 				E0D7AC3B2772DC4600916246 /* MSYLabel.m in Sources */,
 				E065298227707D4A00639B67 /* MSYCommonTitleDetailCell.m in Sources */,
 				E0C65309276C75C3006C74DC /* MSYOperation.m in Sources */,
+				E02868C627D1BECF009F6631 /* MSYBenzBusinessCar.m in Sources */,
 				E0A4BF6F26E5FCF6003459C7 /* MSYRunloopPresenter.m in Sources */,
+				E02868F527D1DC36009F6631 /* MSYBenzCarImpl.m in Sources */,
 				E0C15B9A27717B270037CACF /* MSYRunLoopImageCell.m in Sources */,
+				E02868F227D1DC1A009F6631 /* MSYBaseCarImpl.m in Sources */,
 				E0C922DD27C7829C00848707 /* MSYHashOCImplViewController.m in Sources */,
 				E022D92D27C496AE008631E3 /* MSYAnimationListViewController.m in Sources */,
 				E0250A13271978E400604984 /* ZXPUnicode.m in Sources */,
@@ -1119,6 +1296,7 @@
 				E06C4EC027744D4B00E07EF5 /* MSYViewCtrIntercepter.m in Sources */,
 				E022D93527C4C4FC008631E3 /* ATNavigationController.m in Sources */,
 				E0A4BF6126E5F738003459C7 /* MSYPerson.m in Sources */,
+				E02868E627D1CBCD009F6631 /* MSYAbstractFactoryViewController.m in Sources */,
 				E0C4966926E20BB40068D5A7 /* MSYAlgorithmViewController.m in Sources */,
 				E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */,
 				E0D7AC4E27730A8C00916246 /* MSYCoreGraphicsCell.m in Sources */,
@@ -1133,8 +1311,10 @@
 				E018CEA027B0F78000A898A8 /* MSYCustomModel.m in Sources */,
 				E02FCD3A27CCB2070013C8AB /* MSYThread.m in Sources */,
 				E0D7AC492773075F00916246 /* MSYCoreGraphicsTestView.m in Sources */,
+				E02868F827D1DC40009F6631 /* MSYBmwCarImpl.m in Sources */,
 				E0C65306276C6C6B006C74DC /* MSYOperationViewController.m in Sources */,
 				E0C4966326E20B740068D5A7 /* MSYAlgorithmPresenter.m in Sources */,
+				E02868D927D1C46B009F6631 /* MSYMethodFactory.m in Sources */,
 				E0D7AC462773048300916246 /* MSYCoreGraphicsViewController.m in Sources */,
 				E0C4967526E21CF10068D5A7 /* MSYAlgorithmTool.m in Sources */,
 				E0C4969F26E32A5D0068D5A7 /* UIImage+MSYWatermark.m in Sources */,
@@ -1142,21 +1322,33 @@
 				E0C15BA1277187980037CACF /* YYWeakProxy.m in Sources */,
 				E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */,
 				E022D94327C4E1FB008631E3 /* MSYMotionManager.m in Sources */,
+				E02868DC27D1C61E009F6631 /* MSYBenzFactory.m in Sources */,
+				E02868D627D1C457009F6631 /* MSYMethodFactoryViewController.m in Sources */,
 				E065298B277088CD00639B67 /* MSYCommonTitleImageCell.m in Sources */,
+				E02868B927D1B8E6009F6631 /* MSYSimpleFactoryViewController.m in Sources */,
 				E0A4BF7A26E5FEC0003459C7 /* MSYRunloopViewController.m in Sources */,
+				E02868BC27D1BCDC009F6631 /* MSYSimpleFactory.m in Sources */,
+				E02868B127D1B705009F6631 /* MSYDesignPatternListViewController.m in Sources */,
 				E018F44227CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m in Sources */,
 				E018F44727CE15EB00A3B0B0 /* MSYPlayAudioViewController.m in Sources */,
 				E0C496AC26E379750068D5A7 /* MSYRuntimePresenter.m in Sources */,
 				E0D7AC362772DBD700916246 /* YYTransaction.m in Sources */,
 				E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */,
 				E022D93F27C4D5A9008631E3 /* MSYOpenHole3DItemView.m in Sources */,
+				E02868C327D1BE97009F6631 /* MSYBenzSportCar.m in Sources */,
+				E02868D227D1BF36009F6631 /* MSYAudiSportCar.m in Sources */,
 				E0D7AC5127730B8800916246 /* MSYCoreGraphicsRectangularCell.m in Sources */,
 				E0C922D827C781C000848707 /* MSYDataStructureListViewController.m in Sources */,
 				E0C496A726E3793A0068D5A7 /* MSYRuntimeViewController.m in Sources */,
 				E022D93827C4C791008631E3 /* MSYOpenHole3DBannerViewController.m in Sources */,
+				E02868EF27D1DA4D009F6631 /* MSYAbstractFactory.m in Sources */,
 				E0D7AC342772DBD700916246 /* YYAsyncLayer.m in Sources */,
 				E0C4964526E1D48D0068D5A7 /* main.m in Sources */,
+				E02868CF27D1BF25009F6631 /* MSYBmwSportCar.m in Sources */,
+				E02868FB27D1DD7F009F6631 /* MSYAudiCarImpl.m in Sources */,
 				E022D93C27C4C985008631E3 /* MSYOpenHole3DBannerView.m in Sources */,
+				E02868DF27D1CA82009F6631 /* MSYBmwFactory.m in Sources */,
+				E02868C027D1BE19009F6631 /* MSYCar.m in Sources */,
 				E02FCD3727CCB03A0013C8AB /* MSYCFPermanantThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
