@@ -12,7 +12,6 @@
 #import <MSYTableView/MSYCommonTableData.h>
 
 #import "MSYBasicPresenter.h"
-#import "UIImage+MSYWatermark.h"
 
 @interface MSYBasicViewController () <MSYBasicPresenterOutput, MSYTableViewProtocol>
 
@@ -45,15 +44,12 @@
     }];
 }
 
-- (void)showContentView:(UIView *)contentView {
-    if (!contentView) {
-        return;
+#pragma mark - OC Grammar
+
+- (void)exampleOCGrammar:(MSYCommonTableRow *)rowModel {
+    if ([rowModel.title isEqualToString:kRowBasic_block]) {
+        [self.presenter pushBlockViewCtrWithTitle:rowModel.title];
     }
-    UIViewController *viewCtr = [[UIViewController alloc] init];
-    viewCtr.view.backgroundColor = [UIColor whiteColor];
-    
-    [viewCtr.view addSubview:contentView];
-    [self.navigationController pushViewController:viewCtr animated:YES];
 }
 
 #pragma mark - thread
@@ -81,74 +77,6 @@
     }
 }
 
-#pragma mark - image
-
-- (void)exampleImage:(MSYCommonTableRow *)rowModel {
-    if ([rowModel.title isEqualToString:kRowBasic_imageSynthesis]) {
-        [self imageSynthesis];
-    }
-    else if ([rowModel.title isEqualToString:kRowBasic_watermark]) {
-        [self imageWatermark];
-    }
-    else if ([rowModel.title isEqualToString:kRowBasic_imageCorner]) {
-        [self imageCorner];
-    }
-}
-
-- (void)imageSynthesis {
-    NSArray *dicList = @[
-        @{@"color" : [UIColor redColor], @"size" : @(CGSizeMake(200, 10))},
-        @{@"color" : [UIColor yellowColor], @"size" : @(CGSizeMake(150, 20))},
-        @{@"color" : [UIColor greenColor], @"size" : @(CGSizeMake(300, 30))},
-        @{@"color" : [UIColor cyanColor], @"size" : @(CGSizeMake(10, 40))},
-        @{@"color" : [UIColor blueColor], @"size" : @(CGSizeMake(60, 50))},
-        @{@"color" : [UIColor purpleColor], @"size" : @(CGSizeMake(100, 60))},
-    ];
-    NSMutableArray *imageList = [NSMutableArray array];
-    for (NSDictionary *dic in dicList) {
-        UIColor *color = dic[@"color"];
-        NSNumber *sizeNum = dic[@"size"];
-        
-        UIImage *image = [UIImage msy_imageWithColor:color size:[sizeNum CGSizeValue]];
-        [imageList addObject:image];
-    }
-    
-    UIImage *resultImage = [UIImage msy_imageSynthesisWithImageList:imageList];
-    UIImageView *bgIV = [[UIImageView alloc] init];
-    bgIV.image = resultImage;
-    bgIV.frame = CGRectMake(30, 90, resultImage.size.width, resultImage.size.height);
-    bgIV.layer.borderWidth = 1.0;
-    bgIV.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    
-    [self showContentView:bgIV];
-}
-
-- (void)imageWatermark {
-    UIImage *bgImage = [UIImage msy_imageWithColor:[UIColor yellowColor] size:CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height)];
-    UIImage *watermarkImage = [UIImage msy_getWaterMarkImage:bgImage title:@"watermark" markFont:[UIFont systemFontOfSize:17] markColor:[UIColor lightGrayColor]];
-    
-    UIImageView *bgIV = [[UIImageView alloc] init];
-    bgIV.image = watermarkImage;
-    bgIV.frame = CGRectMake(0, 0, bgImage.size.width, bgImage.size.height);
-    
-    [self showContentView:bgIV];
-}
-
-- (void)imageCorner {
-    UIImage *avatarImage = [UIImage msy_imageWithColor:[UIColor blueColor] size:CGSizeMake(100, 100)];
-    UIImageView *avatarIV = [[UIImageView alloc] init];
-    avatarIV.image = avatarImage;
-    avatarIV.frame = CGRectMake(100, 100, avatarImage.size.width, avatarImage.size.height);
-    
-    UIGraphicsBeginImageContextWithOptions(avatarIV.bounds.size, NO, 1.0);
-    [[UIBezierPath bezierPathWithRoundedRect:avatarIV.bounds cornerRadius:avatarIV.bounds.size.width] addClip];
-    [avatarIV drawRect:avatarIV.bounds];
-    avatarIV.image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    [self showContentView:avatarIV];
-}
-
 #pragma mark - collectionView
 
 - (void)exampleCollectionView {
@@ -174,7 +102,10 @@
 - (void)msy_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MSYCommonTableSection *sectionModel = self.listView.dataSource[indexPath.section];
     MSYCommonTableRow *rowModel = sectionModel.rows[indexPath.row];
-    if ([sectionModel.headerTitle isEqualToString:kSecBasic_thread]) {
+    if ([sectionModel.headerTitle isEqualToString:kSecBasic_OCGrammar]) {
+        [self exampleOCGrammar:rowModel];
+    }
+    else if ([sectionModel.headerTitle isEqualToString:kSecBasic_thread]) {
         [self exampleThread:rowModel];
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecBasic_runtime]) {
@@ -182,9 +113,6 @@
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecBasic_autoreleasepool]) {
         [self.presenter pushAutoreleasePoolViewCtr];
-    }
-    else if ([sectionModel.headerTitle isEqualToString:kSecBasic_image]) {
-        [self exampleImage:rowModel];
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecBasic_collectionView]) {
         [self exampleCollectionView];

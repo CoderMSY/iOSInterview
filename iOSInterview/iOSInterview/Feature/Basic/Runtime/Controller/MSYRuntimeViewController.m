@@ -51,7 +51,7 @@
 - (void)classMethod:(MSYCommonTableRow *)rowModel {
     if ([rowModel.title isEqualToString:kRowRuntime_class_allocateClassPair]) {
         // 创建类
-        Class newClass = objc_allocateClassPair([NSObject class], "MSYPerson", 0);
+        Class newClass = objc_allocateClassPair([NSObject class], "MSYPerson1", 0);
         //动态添加成员变量（已经注册的类是不能动态添加成员变量的）
         class_addIvar(newClass, "_age", 4, 1, @encode(int));
         class_addIvar(newClass, "_height", 4, 1, @encode(int));

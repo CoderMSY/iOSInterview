@@ -8,17 +8,16 @@
 #ifndef MSYBasicDefine_h
 #define MSYBasicDefine_h
 
+static NSString *const kSecBasic_OCGrammar = @"Objective-C 语法";
+static NSString *const kRowBasic_block = @"block";
+
+
 static NSString *const kSecBasic_runtime = @"runtime runloop";
 static NSString *const kRowBasic_runtime = @"runtime的应用";
 static NSString *const kRowBasic_runloop = @"runloop的应用";
 
 static NSString *const kSecBasic_autoreleasepool = @"autoreleasepool";
 static NSString *const kRowBasic_autoreleasepool = @"autoreleasepool案例";
-
-static NSString *const kSecBasic_image = @"图像处理";
-static NSString *const kRowBasic_imageSynthesis = @"图像合成";
-static NSString *const kRowBasic_watermark = @"图像水印";
-static NSString *const kRowBasic_imageCorner = @"图像圆角";
 
 static NSString *const kSecBasic_collectionView = @"collectionView";
 static NSString *const kRowBasic_collectionView = @"collectionView拖动";

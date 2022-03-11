@@ -13,6 +13,7 @@
 
 #import "MSYFeatureListDefine.h"
 #import "MSYBgKeepAliveListViewController.h"
+#import "UIImage+MSYWatermark.h"
 
 @interface MSYFeatureListViewController () <MSYTableViewProtocol>
 
@@ -47,9 +48,17 @@
     //官方 https://developer.apple.com/documentation/technologies?language=objc
     NSArray *dataList = @[
         @{
-            kSec_headerTitle : @"案例",
+            kSec_headerTitle : kSecFeature_background,
             kSec_rowContent : @[
-                kFLTitle_backgroundKeepAlive,
+                kRowFeature_backgroundKeepAlive,
+            ],
+        },
+        @{
+            kSec_headerTitle : kSecFeature_image,
+            kSec_rowContent : @[
+                kRowFeature_imageSynthesis,
+                kRowFeature_watermark,
+                kRowFeature_imageCorner,
             ],
         },
     ];
@@ -84,16 +93,99 @@
 - (void)msy_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MSYCommonTableSection *sectionModel = self.listView.dataSource[indexPath.section];
     MSYCommonTableRow *rowModel = sectionModel.rows[indexPath.row];
-    if ([rowModel.title isEqualToString:kFLTitle_backgroundKeepAlive]) {
+    if ([sectionModel.headerTitle isEqualToString:kSecFeature_background]) {
+        [self exampleBackground:rowModel];
+    }
+    else if ([sectionModel.headerTitle isEqualToString:kSecFeature_image]) {
+        [self exampleImage:rowModel];
+    }
+}
+
+- (void)exampleBackground:(MSYCommonTableRow *)rowModel {
+    if ([rowModel.title isEqualToString:kRowFeature_backgroundKeepAlive]) {
         MSYBgKeepAliveListViewController *ctr = [[MSYBgKeepAliveListViewController alloc] init];
         ctr.title = rowModel.title;
         [self.navigationController pushViewController:ctr animated:YES];
     }
-//    else if ([rowModel.title isEqualToString:kALTitle_openHole3DBanner]) {
-//        MSYOpenHole3DBannerViewController *ctr = [[MSYOpenHole3DBannerViewController alloc] init];
-//        ctr.title = rowModel.title;
-//        [self.navigationController pushViewController:ctr animated:YES];
-//    }
+}
+
+#pragma mark - image
+
+- (void)exampleImage:(MSYCommonTableRow *)rowModel {
+    if ([rowModel.title isEqualToString:kRowFeature_imageSynthesis]) {
+        [self imageSynthesis];
+    }
+    else if ([rowModel.title isEqualToString:kRowFeature_watermark]) {
+        [self imageWatermark];
+    }
+    else if ([rowModel.title isEqualToString:kRowFeature_imageCorner]) {
+        [self imageCorner];
+    }
+}
+
+- (void)imageSynthesis {
+    NSArray *dicList = @[
+        @{@"color" : [UIColor redColor], @"size" : @(CGSizeMake(200, 10))},
+        @{@"color" : [UIColor yellowColor], @"size" : @(CGSizeMake(150, 20))},
+        @{@"color" : [UIColor greenColor], @"size" : @(CGSizeMake(300, 30))},
+        @{@"color" : [UIColor cyanColor], @"size" : @(CGSizeMake(10, 40))},
+        @{@"color" : [UIColor blueColor], @"size" : @(CGSizeMake(60, 50))},
+        @{@"color" : [UIColor purpleColor], @"size" : @(CGSizeMake(100, 60))},
+    ];
+    NSMutableArray *imageList = [NSMutableArray array];
+    for (NSDictionary *dic in dicList) {
+        UIColor *color = dic[@"color"];
+        NSNumber *sizeNum = dic[@"size"];
+        
+        UIImage *image = [UIImage msy_imageWithColor:color size:[sizeNum CGSizeValue]];
+        [imageList addObject:image];
+    }
+    
+    UIImage *resultImage = [UIImage msy_imageSynthesisWithImageList:imageList];
+    UIImageView *bgIV = [[UIImageView alloc] init];
+    bgIV.image = resultImage;
+    bgIV.frame = CGRectMake(30, 90, resultImage.size.width, resultImage.size.height);
+    bgIV.layer.borderWidth = 1.0;
+    bgIV.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    
+    [self showContentView:bgIV];
+}
+
+- (void)imageWatermark {
+    UIImage *bgImage = [UIImage msy_imageWithColor:[UIColor yellowColor] size:CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height)];
+    UIImage *watermarkImage = [UIImage msy_getWaterMarkImage:bgImage title:@"watermark" markFont:[UIFont systemFontOfSize:17] markColor:[UIColor lightGrayColor]];
+    
+    UIImageView *bgIV = [[UIImageView alloc] init];
+    bgIV.image = watermarkImage;
+    bgIV.frame = CGRectMake(0, 0, bgImage.size.width, bgImage.size.height);
+    
+    [self showContentView:bgIV];
+}
+
+- (void)imageCorner {
+    UIImage *avatarImage = [UIImage msy_imageWithColor:[UIColor blueColor] size:CGSizeMake(100, 100)];
+    UIImageView *avatarIV = [[UIImageView alloc] init];
+    avatarIV.image = avatarImage;
+    avatarIV.frame = CGRectMake(100, 100, avatarImage.size.width, avatarImage.size.height);
+    
+    UIGraphicsBeginImageContextWithOptions(avatarIV.bounds.size, NO, 1.0);
+    [[UIBezierPath bezierPathWithRoundedRect:avatarIV.bounds cornerRadius:avatarIV.bounds.size.width] addClip];
+    [avatarIV drawRect:avatarIV.bounds];
+    avatarIV.image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self showContentView:avatarIV];
+}
+
+- (void)showContentView:(UIView *)contentView {
+    if (!contentView) {
+        return;
+    }
+    UIViewController *viewCtr = [[UIViewController alloc] init];
+    viewCtr.view.backgroundColor = [UIColor whiteColor];
+    
+    [viewCtr.view addSubview:contentView];
+    [self.navigationController pushViewController:viewCtr animated:YES];
 }
 
 #pragma mark - getter && setter

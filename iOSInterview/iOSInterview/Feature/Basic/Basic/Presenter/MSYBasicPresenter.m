@@ -8,6 +8,7 @@
 #import "MSYBasicPresenter.h"
 #import <MSYTableView/MSYCommonTableData.h>
 
+#import "MSYBlockViewController.h"
 #import "MSYThreadViewController.h"
 #import "MSYGCDViewController.h"
 #import "MSYOperationViewController.h"
@@ -22,6 +23,15 @@
 
 - (void)fetchDataSource {
     NSArray *secDicList = @[
+        @{
+            kSec_headerTitle : kSecBasic_OCGrammar,
+            kSec_rowContent : @[
+                @{
+                    kRow_title : kRowBasic_block,
+                },
+            ],
+            kSec_footerHeight : @(kSectionHeaderHeight_zero),
+        },
         @{
             kSec_headerTitle : kSecBasic_thread,
             kSec_rowContent : @[
@@ -59,21 +69,6 @@
             kSec_footerHeight : @(kSectionHeaderHeight_zero),
         },
         @{
-            kSec_headerTitle : kSecBasic_image,
-            kSec_rowContent : @[
-                    @{
-                        kRow_title : kRowBasic_imageSynthesis,
-                    },
-                    @{
-                        kRow_title : kRowBasic_watermark,
-                    },
-                    @{
-                        kRow_title : kRowBasic_imageCorner,
-                    }
-            ],
-            kSec_footerHeight : @(kSectionHeaderHeight_zero),
-        },
-        @{
             kSec_headerTitle : kSecBasic_collectionView,
             kSec_rowContent : @[
                     @{
@@ -87,6 +82,13 @@
     NSArray *dataSource = [MSYCommonTableSection sectionsWithData:secDicList];
     
     [self.output renderDataSource:dataSource];
+}
+
+- (void)pushBlockViewCtrWithTitle:(NSString *)title {
+    MSYBlockViewController *ctr = [[MSYBlockViewController alloc] init];
+    ctr.title = title;
+    
+    [self.viewController.navigationController pushViewController:ctr animated:YES];
 }
 
 - (void)pushThreadViewCtrWithTitle:(NSString *)title {
