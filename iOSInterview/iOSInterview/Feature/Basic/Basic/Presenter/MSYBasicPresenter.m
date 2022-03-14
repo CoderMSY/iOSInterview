@@ -28,6 +28,11 @@
             kSec_rowContent : @[
                 @{
                     kRow_title : kRowBasic_KVO,
+                },
+                @{
+                    kRow_title : kRowBasic_KVC,
+                },
+                @{
                     kRow_title : kRowBasic_block,
                 },
             ],

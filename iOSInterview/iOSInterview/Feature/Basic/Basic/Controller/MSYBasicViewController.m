@@ -13,6 +13,7 @@
 
 #import "MSYBasicPresenter.h"
 #import "MSYKVOViewController.h"
+#import "MSYKVCListViewController.h"
 
 @interface MSYBasicViewController () <MSYBasicPresenterOutput, MSYTableViewProtocol>
 
@@ -53,6 +54,10 @@
     }
     else if ([rowModel.title isEqualToString:kRowBasic_KVO]) {
         [self.presenter pushNextPageWithCtr:MSYKVOViewController.new
+                                      title:rowModel.title];
+    }
+    else if ([rowModel.title isEqualToString:kRowBasic_KVC]) {
+        [self.presenter pushNextPageWithCtr:MSYKVCListViewController.new
                                       title:rowModel.title];
     }
 }
