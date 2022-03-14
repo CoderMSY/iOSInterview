@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)fetchDataSource;
 
+- (void)pushNextPageWithCtr:(UIViewController *)ctr
+                      title:(NSString *)title;
 - (void)pushBlockViewCtrWithTitle:(NSString *)title;
 - (void)pushThreadViewCtrWithTitle:(NSString *)title;
 - (void)pushGCDViewCtrWithTitle:(NSString *)title;

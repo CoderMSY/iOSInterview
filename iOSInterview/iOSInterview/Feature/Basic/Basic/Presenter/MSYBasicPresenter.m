@@ -27,6 +27,7 @@
             kSec_headerTitle : kSecBasic_OCGrammar,
             kSec_rowContent : @[
                 @{
+                    kRow_title : kRowBasic_KVO,
                     kRow_title : kRowBasic_block,
                 },
             ],
@@ -82,6 +83,17 @@
     NSArray *dataSource = [MSYCommonTableSection sectionsWithData:secDicList];
     
     [self.output renderDataSource:dataSource];
+}
+
+- (void)pushNextPageWithCtr:(UIViewController *)ctr
+                      title:(NSString *)title {
+    if (!ctr) {
+        return;
+    }
+    
+    ctr.title = title;
+    
+    [self.viewController.navigationController pushViewController:ctr animated:YES];
 }
 
 - (void)pushBlockViewCtrWithTitle:(NSString *)title {

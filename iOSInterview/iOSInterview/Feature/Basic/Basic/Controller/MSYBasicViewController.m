@@ -12,6 +12,7 @@
 #import <MSYTableView/MSYCommonTableData.h>
 
 #import "MSYBasicPresenter.h"
+#import "MSYKVOViewController.h"
 
 @interface MSYBasicViewController () <MSYBasicPresenterOutput, MSYTableViewProtocol>
 
@@ -49,6 +50,10 @@
 - (void)exampleOCGrammar:(MSYCommonTableRow *)rowModel {
     if ([rowModel.title isEqualToString:kRowBasic_block]) {
         [self.presenter pushBlockViewCtrWithTitle:rowModel.title];
+    }
+    else if ([rowModel.title isEqualToString:kRowBasic_KVO]) {
+        [self.presenter pushNextPageWithCtr:MSYKVOViewController.new
+                                      title:rowModel.title];
     }
 }
 

@@ -17,6 +17,7 @@ pod 'MSYBaseClass'
 pod 'YYText'
 pod 'Aspects'
 pod 'ZYBannerView'
+pod 'KVOController'
 
   # Pods for iOSInterview
 

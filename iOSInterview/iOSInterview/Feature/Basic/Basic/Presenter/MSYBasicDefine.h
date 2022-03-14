@@ -9,6 +9,7 @@
 #define MSYBasicDefine_h
 
 static NSString *const kSecBasic_OCGrammar = @"Objective-C 语法";
+static NSString *const kRowBasic_KVO = @"KVO";
 static NSString *const kRowBasic_block = @"block";
 
 
