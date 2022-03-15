@@ -18,6 +18,8 @@ pod 'YYText'
 pod 'Aspects'
 pod 'ZYBannerView'
 pod 'KVOController'
+pod 'UIAlertController+Blocks'
+pod 'FMDB/SQLCipher'
 
   # Pods for iOSInterview
 

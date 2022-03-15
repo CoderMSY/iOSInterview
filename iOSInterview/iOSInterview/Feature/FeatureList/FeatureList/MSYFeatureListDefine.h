@@ -8,6 +8,10 @@
 #ifndef MSYFeatureListDefine_h
 #define MSYFeatureListDefine_h
 
+static NSString *const kSecFeature_SQL = @"数据库";
+static NSString *const kRowFeature_databaseFileEncrpt = @"数据库文件加密";
+//static NSString *const kRowFeature_SQL = @"数据库加密";
+
 static NSString *const kSecFeature_background = @"App 后台处理";
 static NSString *const kRowFeature_backgroundKeepAlive = @"App 后台保活";
 

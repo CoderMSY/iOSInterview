@@ -6,18 +6,19 @@
 //
 
 #import "MSYFeatureListViewController.h"
-#import <Masonry/Masonry.h>
-#import <MSYTableView/MSYCommonTableView.h>
-#import <MSYTableView/MSYCommonTableData.h>
-#import <MSYTableView/MSYTableViewProtocol.h>
+//#import <Masonry/Masonry.h>
+//#import <MSYTableView/MSYCommonTableView.h>
+//#import <MSYTableView/MSYCommonTableData.h>
+//#import <MSYTableView/MSYTableViewProtocol.h>
 
 #import "MSYFeatureListDefine.h"
+#import "MSYDatabaseListViewController.h"
 #import "MSYBgKeepAliveListViewController.h"
 #import "UIImage+MSYWatermark.h"
 
 @interface MSYFeatureListViewController () <MSYTableViewProtocol>
 
-@property (nonatomic, strong) MSYCommonTableView *listView;
+//@property (nonatomic, strong) MSYCommonTableView *listView;
 
 @end
 
@@ -27,8 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.listView];
-    [self initConstraints];
+//    [self.view addSubview:self.listView];
+//    [self initConstraints];
     
     [self loadDataSource];
 }
@@ -37,16 +38,22 @@
 
 #pragma mark - private methods
 
-- (void)initConstraints {
-    [self.listView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.view);
-    }];
-}
+//- (void)initConstraints {
+//    [self.listView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(self.view);
+//    }];
+//}
 
 - (void)loadDataSource {
     //知识框架参考 https://www.jianshu.com/p/f342daf789af
     //官方 https://developer.apple.com/documentation/technologies?language=objc
     NSArray *dataList = @[
+        @{
+            kSec_headerTitle : kSecFeature_SQL,
+            kSec_rowContent : @[
+                kRowFeature_databaseFileEncrpt,
+            ],
+        },
         @{
             kSec_headerTitle : kSecFeature_background,
             kSec_rowContent : @[
@@ -93,6 +100,11 @@
 - (void)msy_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MSYCommonTableSection *sectionModel = self.listView.dataSource[indexPath.section];
     MSYCommonTableRow *rowModel = sectionModel.rows[indexPath.row];
+    if ([sectionModel.headerTitle isEqualToString:kSecFeature_SQL]) {
+        if ([rowModel.title isEqualToString:kRowFeature_databaseFileEncrpt]) {
+            [self pushNextPageWithCtr:MSYDatabaseListViewController.new title:rowModel.title];
+        }
+    }
     if ([sectionModel.headerTitle isEqualToString:kSecFeature_background]) {
         [self exampleBackground:rowModel];
     }
@@ -191,11 +203,11 @@
 #pragma mark - getter && setter
 
 
-- (MSYCommonTableView *)listView {
-    if (!_listView) {
-        _listView = [[MSYCommonTableView alloc] initWithCellStyle:UITableViewCellStyleSubtitle];
-    }
-    return _listView;
-}
+//- (MSYCommonTableView *)listView {
+//    if (!_listView) {
+//        _listView = [[MSYCommonTableView alloc] initWithCellStyle:UITableViewCellStyleSubtitle];
+//    }
+//    return _listView;
+//}
 
 @end

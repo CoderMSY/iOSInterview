@@ -5,11 +5,11 @@
 //  Created by Simon Miao on 2022/3/1.
 //
 
-#import "MSYBaseViewController.h"
+#import "MSYBaseListViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MSYFeatureListViewController : MSYBaseViewController
+@interface MSYFeatureListViewController : MSYBaseListViewController
 
 @end
 

@@ -67,9 +67,12 @@
 		E065298527707E1000639B67 /* MSYCommonTitleDetailFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E065298427707E1000639B67 /* MSYCommonTitleDetailFrameModel.m */; };
 		E065298B277088CD00639B67 /* MSYCommonTitleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E065298A277088CD00639B67 /* MSYCommonTitleImageCell.m */; };
 		E065298E2770896E00639B67 /* MSYCommonTitleImageFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E065298D2770896E00639B67 /* MSYCommonTitleImageFrameModel.m */; };
+		E06B0C6427DF840500D5BC32 /* MSYDatabaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06B0C6327DF840500D5BC32 /* MSYDatabaseListViewController.m */; };
+		E06B0C6927DF8ADA00D5BC32 /* MSYDaoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E06B0C6827DF8ADA00D5BC32 /* MSYDaoFactory.m */; };
 		E06C4EBB2774211500E07EF5 /* MSYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06C4EBA2774211500E07EF5 /* MSYBaseViewController.m */; };
 		E06C4EC027744D4B00E07EF5 /* MSYViewCtrIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = E06C4EBF27744D4B00E07EF5 /* MSYViewCtrIntercepter.m */; };
 		E06C4EC32774542B00E07EF5 /* UIViewController+MSYHookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E06C4EC22774542B00E07EF5 /* UIViewController+MSYHookHelper.m */; };
+		E0765DDA27E02E5D00926E37 /* MSYEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E0765DD927E02E5D00926E37 /* MSYEncryptHelper.m */; };
 		E0A4BF6126E5F738003459C7 /* MSYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A4BF6026E5F738003459C7 /* MSYPerson.m */; };
 		E0A4BF6726E5F851003459C7 /* NSObject+MSYJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A4BF6626E5F851003459C7 /* NSObject+MSYJson.m */; };
 		E0A4BF6F26E5FCF6003459C7 /* MSYRunloopPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A4BF6E26E5FCF6003459C7 /* MSYRunloopPresenter.m */; };
@@ -114,6 +117,10 @@
 		E0D7AC5427730F0C00916246 /* MSYCoreGraphicsLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D7AC5327730F0C00916246 /* MSYCoreGraphicsLineView.m */; };
 		E0EB17DD27D998A200813AEA /* MSYBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EB17DC27D998A200813AEA /* MSYBlockViewController.m */; };
 		E0EB17E227D9C08E00813AEA /* MSYBlockPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EB17E127D9C08E00813AEA /* MSYBlockPresenter.m */; };
+		E0F5C11427DF8C18008BC174 /* MSYBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C11327DF8C18008BC174 /* MSYBaseDao.m */; };
+		E0F5C11727DF8C65008BC174 /* MSYDb1Dao.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C11627DF8C65008BC174 /* MSYDb1Dao.m */; };
+		E0F5C11A27DF8C75008BC174 /* MSYDb2Dao.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C11927DF8C75008BC174 /* MSYDb2Dao.m */; };
+		E0F5C12427DF9CFE008BC174 /* MSYDbService.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C12327DF9CFE008BC174 /* MSYDbService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,6 +252,11 @@
 		E065298A277088CD00639B67 /* MSYCommonTitleImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCommonTitleImageCell.m; sourceTree = "<group>"; };
 		E065298C2770896E00639B67 /* MSYCommonTitleImageFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCommonTitleImageFrameModel.h; sourceTree = "<group>"; };
 		E065298D2770896E00639B67 /* MSYCommonTitleImageFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCommonTitleImageFrameModel.m; sourceTree = "<group>"; };
+		E06B0C6227DF840500D5BC32 /* MSYDatabaseListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDatabaseListViewController.h; sourceTree = "<group>"; };
+		E06B0C6327DF840500D5BC32 /* MSYDatabaseListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDatabaseListViewController.m; sourceTree = "<group>"; };
+		E06B0C6527DF847300D5BC32 /* MSYDatabaseListDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDatabaseListDefine.h; sourceTree = "<group>"; };
+		E06B0C6727DF8ADA00D5BC32 /* MSYDaoFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDaoFactory.h; sourceTree = "<group>"; };
+		E06B0C6827DF8ADA00D5BC32 /* MSYDaoFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDaoFactory.m; sourceTree = "<group>"; };
 		E06C4EB727740F0100E07EF5 /* MSYCoreGraphicsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCoreGraphicsDefine.h; sourceTree = "<group>"; };
 		E06C4EB92774211500E07EF5 /* MSYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBaseViewController.h; sourceTree = "<group>"; };
 		E06C4EBA2774211500E07EF5 /* MSYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBaseViewController.m; sourceTree = "<group>"; };
@@ -252,6 +264,10 @@
 		E06C4EBF27744D4B00E07EF5 /* MSYViewCtrIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYViewCtrIntercepter.m; sourceTree = "<group>"; };
 		E06C4EC12774542B00E07EF5 /* UIViewController+MSYHookHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MSYHookHelper.h"; sourceTree = "<group>"; };
 		E06C4EC22774542B00E07EF5 /* UIViewController+MSYHookHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MSYHookHelper.m"; sourceTree = "<group>"; };
+		E0765DD627E0232200926E37 /* MSYDb1DaoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDb1DaoProtocol.h; sourceTree = "<group>"; };
+		E0765DD727E0280600926E37 /* MSYDb2DaoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDb2DaoProtocol.h; sourceTree = "<group>"; };
+		E0765DD827E02E5D00926E37 /* MSYEncryptHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYEncryptHelper.h; sourceTree = "<group>"; };
+		E0765DD927E02E5D00926E37 /* MSYEncryptHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYEncryptHelper.m; sourceTree = "<group>"; };
 		E0A4BF5926E5BFC4003459C7 /* MSYRuntimeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYRuntimeDefine.h; sourceTree = "<group>"; };
 		E0A4BF5F26E5F738003459C7 /* MSYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYPerson.h; sourceTree = "<group>"; };
 		E0A4BF6026E5F738003459C7 /* MSYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYPerson.m; sourceTree = "<group>"; };
@@ -351,6 +367,14 @@
 		E0EB17E027D9C08E00813AEA /* MSYBlockPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBlockPresenter.h; sourceTree = "<group>"; };
 		E0EB17E127D9C08E00813AEA /* MSYBlockPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBlockPresenter.m; sourceTree = "<group>"; };
 		E0EB17E327D9C0B100813AEA /* MSYBlockPresenterIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBlockPresenterIO.h; sourceTree = "<group>"; };
+		E0F5C11227DF8C18008BC174 /* MSYBaseDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBaseDao.h; sourceTree = "<group>"; };
+		E0F5C11327DF8C18008BC174 /* MSYBaseDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBaseDao.m; sourceTree = "<group>"; };
+		E0F5C11527DF8C65008BC174 /* MSYDb1Dao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDb1Dao.h; sourceTree = "<group>"; };
+		E0F5C11627DF8C65008BC174 /* MSYDb1Dao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDb1Dao.m; sourceTree = "<group>"; };
+		E0F5C11827DF8C75008BC174 /* MSYDb2Dao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDb2Dao.h; sourceTree = "<group>"; };
+		E0F5C11927DF8C75008BC174 /* MSYDb2Dao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDb2Dao.m; sourceTree = "<group>"; };
+		E0F5C12227DF9CFE008BC174 /* MSYDbService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDbService.h; sourceTree = "<group>"; };
+		E0F5C12327DF9CFE008BC174 /* MSYDbService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDbService.m; sourceTree = "<group>"; };
 		EB80A074F4B59114FDAA9D80 /* Pods_iOSInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -428,6 +452,7 @@
 		E018F43827CE110300A3B0B0 /* FeatureList */ = {
 			isa = PBXGroup;
 			children = (
+				E06B0C6027DF83C800D5BC32 /* Database */,
 				E018F43E27CE12C200A3B0B0 /* BgKeepAlive */,
 				E018F43927CE11E700A3B0B0 /* FeatureList */,
 			);
@@ -780,6 +805,51 @@
 				E065298D2770896E00639B67 /* MSYCommonTitleImageFrameModel.m */,
 			);
 			path = TitleImageCell;
+			sourceTree = "<group>";
+		};
+		E06B0C6027DF83C800D5BC32 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E06B0C6627DF8ACF00D5BC32 /* Dao */,
+				E06B0C6127DF83F000D5BC32 /* DatabaseList */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		E06B0C6127DF83F000D5BC32 /* DatabaseList */ = {
+			isa = PBXGroup;
+			children = (
+				E06B0C6227DF840500D5BC32 /* MSYDatabaseListViewController.h */,
+				E06B0C6327DF840500D5BC32 /* MSYDatabaseListViewController.m */,
+				E06B0C6527DF847300D5BC32 /* MSYDatabaseListDefine.h */,
+			);
+			path = DatabaseList;
+			sourceTree = "<group>";
+		};
+		E06B0C6627DF8ACF00D5BC32 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				E0F5C11B27DF904D008BC174 /* FMDBExtend */,
+				E06B0C6A27DF8B9100D5BC32 /* DaoImpl */,
+				E06B0C6727DF8ADA00D5BC32 /* MSYDaoFactory.h */,
+				E06B0C6827DF8ADA00D5BC32 /* MSYDaoFactory.m */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		E06B0C6A27DF8B9100D5BC32 /* DaoImpl */ = {
+			isa = PBXGroup;
+			children = (
+				E0F5C11227DF8C18008BC174 /* MSYBaseDao.h */,
+				E0F5C11327DF8C18008BC174 /* MSYBaseDao.m */,
+				E0F5C11527DF8C65008BC174 /* MSYDb1Dao.h */,
+				E0F5C11627DF8C65008BC174 /* MSYDb1Dao.m */,
+				E0765DD627E0232200926E37 /* MSYDb1DaoProtocol.h */,
+				E0F5C11827DF8C75008BC174 /* MSYDb2Dao.h */,
+				E0F5C11927DF8C75008BC174 /* MSYDb2Dao.m */,
+				E0765DD727E0280600926E37 /* MSYDb2DaoProtocol.h */,
+			);
+			path = DaoImpl;
 			sourceTree = "<group>";
 		};
 		E06C4EB82774210000E07EF5 /* BaseClass */ = {
@@ -1279,6 +1349,17 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		E0F5C11B27DF904D008BC174 /* FMDBExtend */ = {
+			isa = PBXGroup;
+			children = (
+				E0F5C12227DF9CFE008BC174 /* MSYDbService.h */,
+				E0F5C12327DF9CFE008BC174 /* MSYDbService.m */,
+				E0765DD827E02E5D00926E37 /* MSYEncryptHelper.h */,
+				E0765DD927E02E5D00926E37 /* MSYEncryptHelper.m */,
+			);
+			path = FMDBExtend;
+			sourceTree = "<group>";
+		};
 		FF667BEB3C22332D79F8C3DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,12 +1489,14 @@
 				E0D7AC5427730F0C00916246 /* MSYCoreGraphicsLineView.m in Sources */,
 				E008031627DB40C80038559E /* FBKVOListCell.m in Sources */,
 				E0250A0C271973DA00604984 /* MSYCollectionItemCell.m in Sources */,
+				E0F5C11727DF8C65008BC174 /* MSYDb1Dao.m in Sources */,
 				E0C6530C276C8527006C74DC /* MSYOperationQueueHandleCell.m in Sources */,
 				E0C15B9727717A840037CACF /* MSYRunLoopImageViewController.m in Sources */,
 				E0D7AC402772FFF700916246 /* MSYMediaLayerViewController.m in Sources */,
 				E008030527DB23880038559E /* MSYKVOModel.m in Sources */,
 				E0A4BF6726E5F851003459C7 /* NSObject+MSYJson.m in Sources */,
 				E048C6C727CE5EEF00556491 /* MSYLocationManager.m in Sources */,
+				E0F5C12427DF9CFE008BC174 /* MSYDbService.m in Sources */,
 				E0C4967C26E310950068D5A7 /* MSYBasicPresenter.m in Sources */,
 				E0C922E327C7844000848707 /* MSYSingleLinkedNode.m in Sources */,
 				E01CDCF327DF158C004CEBFD /* MSYKVCModel.m in Sources */,
@@ -1423,6 +1506,7 @@
 				E008030F27DB37C00038559E /* MSYKVOListCell.m in Sources */,
 				E02868E227D1CB20009F6631 /* MSYAudiFactory.m in Sources */,
 				E008031327DB408A0038559E /* FBKVOListViewController.m in Sources */,
+				E06B0C6427DF840500D5BC32 /* MSYDatabaseListViewController.m in Sources */,
 				E06C4EBB2774211500E07EF5 /* MSYBaseViewController.m in Sources */,
 				E02868C927D1BEF0009F6631 /* MSYBmwBusinessCar.m in Sources */,
 				E0D7AC3B2772DC4600916246 /* MSYLabel.m in Sources */,
@@ -1438,6 +1522,7 @@
 				E022D92D27C496AE008631E3 /* MSYAnimationListViewController.m in Sources */,
 				E0250A13271978E400604984 /* ZXPUnicode.m in Sources */,
 				E065298E2770896E00639B67 /* MSYCommonTitleImageFrameModel.m in Sources */,
+				E0F5C11A27DF8C75008BC174 /* MSYDb2Dao.m in Sources */,
 				E065297D2770759D00639B67 /* MSYThreadViewController.m in Sources */,
 				E0D7AC352772DBD700916246 /* YYSentinel.m in Sources */,
 				E018F43C27CE122100A3B0B0 /* MSYFeatureListViewController.m in Sources */,
@@ -1464,6 +1549,7 @@
 				E01CDCE527DEDC71004CEBFD /* NSObject+WMSafeKVO.m in Sources */,
 				E0C4966326E20B740068D5A7 /* MSYAlgorithmPresenter.m in Sources */,
 				E02868D927D1C46B009F6631 /* MSYMethodFactory.m in Sources */,
+				E06B0C6927DF8ADA00D5BC32 /* MSYDaoFactory.m in Sources */,
 				E008030227DB23770038559E /* MSYKVOViewController.m in Sources */,
 				E0D7AC462773048300916246 /* MSYCoreGraphicsViewController.m in Sources */,
 				E0C4967526E21CF10068D5A7 /* MSYAlgorithmTool.m in Sources */,
@@ -1487,6 +1573,7 @@
 				E0D7AC362772DBD700916246 /* YYTransaction.m in Sources */,
 				E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */,
 				E022D93F27C4D5A9008631E3 /* MSYOpenHole3DItemView.m in Sources */,
+				E0765DDA27E02E5D00926E37 /* MSYEncryptHelper.m in Sources */,
 				E02868C327D1BE97009F6631 /* MSYBenzSportCar.m in Sources */,
 				E02868D227D1BF36009F6631 /* MSYAudiSportCar.m in Sources */,
 				E0D7AC5127730B8800916246 /* MSYCoreGraphicsRectangularCell.m in Sources */,
@@ -1498,6 +1585,7 @@
 				E0D7AC342772DBD700916246 /* YYAsyncLayer.m in Sources */,
 				E0C4964526E1D48D0068D5A7 /* main.m in Sources */,
 				E01CDCEC27DF134E004CEBFD /* MSYBaseListViewController.m in Sources */,
+				E0F5C11427DF8C18008BC174 /* MSYBaseDao.m in Sources */,
 				E02868CF27D1BF25009F6631 /* MSYBmwSportCar.m in Sources */,
 				E02868FB27D1DD7F009F6631 /* MSYAudiCarImpl.m in Sources */,
 				E022D93C27C4C985008631E3 /* MSYOpenHole3DBannerView.m in Sources */,
