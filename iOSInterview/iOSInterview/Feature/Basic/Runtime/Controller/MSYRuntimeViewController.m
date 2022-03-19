@@ -15,6 +15,8 @@
 #import "MSYRuntimePresenter.h"
 #import "MSYPerson.h"
 #import "NSObject+MSYJson.h"
+#import "MSYHookHelper.h"
+#import "MSYStudent.h"
 
 @interface MSYRuntimeViewController () <MSYRuntimePresenterOutput, MSYTableViewProtocol>
 
@@ -26,6 +28,18 @@
 @implementation MSYRuntimeViewController
 
 #pragma mark - lifecycle methods
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        //注意1：method-swizzling使用过程中的只能交换一次
+        [MSYHookHelper msy_swizzleInstanceWithClass:[MSYStudent class] originalSel:@selector(personInstanceMethod) swizzledSel:@selector(msy_studentInstanceMethod)];
+        [MSYHookHelper msy_swizzleInstanceWithClass:[MSYStudent class] originalSel:@selector(personInstanceMethodIsNotImpl) swizzledSel:@selector(msy_studentInstanceMethodIsImpl)];
+        
+        [MSYHookHelper msy_swizzleClassWithClass:[MSYStudent class] originalSel:@selector(personClassMethod) swizzledSel:@selector(msy_studentClassMethod)];
+        [MSYHookHelper msy_swizzleClassWithClass:[MSYStudent class] originalSel:@selector(personClassMethodIsNotImpl) swizzledSel:@selector(msy_studentClassMethodIsImpl)];
+    });
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,6 +60,21 @@
     [self.listView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+}
+
+- (void)invokeMethod:(MSYCommonTableRow *)rowModel {
+    if ([rowModel.title isEqualToString:kRowRuntime_messageSending]) {
+        MSYPerson *person = [MSYPerson alloc];
+        [person run];
+    }
+    else if ([rowModel.title isEqualToString:kRowRuntime_dynamicMessageParsing]) {
+        MSYPerson *person = [MSYPerson alloc];
+        [person unrecognizedMethod];
+    }
+    else if ([rowModel.title isEqualToString:kRowRuntime_messageForwarding]) {
+        MSYPerson *person = [MSYPerson alloc];
+        [person unrecognizedMethod];
+    }
 }
 
 - (void)classMethod:(MSYCommonTableRow *)rowModel {
@@ -80,6 +109,35 @@
     }
 }
 
+- (void)swizzleProblemMethod:(MSYCommonTableRow *)rowModel {
+    if ([rowModel.title isEqualToString:kRowRuntime_subclassIsNotImplAndSuperclassIsImpl]) {
+        MSYStudent *student = [[MSYStudent alloc] init];
+        [student personInstanceMethod];
+        
+        MSYPerson *person = [[MSYPerson alloc] init];
+        [person personInstanceMethod];
+    }
+    else if ([rowModel.title isEqualToString:kRowRuntime_subclassIsNotImplAndSuperclassIsNotImpl]) {
+        MSYStudent *student = [[MSYStudent alloc] init];
+        [student personInstanceMethodIsNotImpl];
+        
+        MSYPerson *person = [[MSYPerson alloc] init];
+        [person personInstanceMethodIsNotImpl];
+    }
+    else if ([rowModel.title isEqualToString:kRowRuntime_class_subclassIsNotImplAndSuperclassIsImpl]) {
+        
+        [MSYStudent personClassMethod];
+        
+        [MSYPerson personClassMethod];
+    }
+    else if ([rowModel.title isEqualToString:kRowRuntime_class_subclassIsNotImplAndSuperclassIsNotImpl]) {
+        
+        [MSYStudent personClassMethodIsNotImpl];
+        
+        [MSYPerson personClassMethodIsNotImpl];
+    }
+}
+
 - (void)applyMethod:(MSYCommonTableRow *)rowModel {
     if ([rowModel.title isEqualToString:kRowRuntime_apply_ivar]) {
         unsigned int count;
@@ -108,6 +166,12 @@
         
         [person run];
     }
+    else if ([rowModel.title isEqualToString:kRowRuntime_apply_array]) {
+        NSArray *array = @[@"1", @"2", @"3"];
+        id value = [array objectAtIndex:3];
+//        id value = array[4];
+        NSLog(@"%@", value);
+    }
 }
 
 #pragma mark - MSYRuntimePresenterOutput
@@ -121,11 +185,17 @@
 - (void)msy_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MSYCommonTableSection *sectionModel = self.listView.dataSource[indexPath.section];
     MSYCommonTableRow *rowModel = sectionModel.rows[indexPath.row];
-    if ([sectionModel.headerTitle isEqualToString:kSecRuntime_class]) {
+    if ([sectionModel.headerTitle isEqualToString:kSecRuntime_invoking]) {
+        [self invokeMethod:rowModel];
+    }
+    else if ([sectionModel.headerTitle isEqualToString:kSecRuntime_class]) {
         [self classMethod:rowModel];
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecRuntime_instance]) {
         [self instanceMethod:rowModel];
+    }
+    else if ([sectionModel.headerTitle isEqualToString:kSecRuntime_swizzleProblem]) {
+        [self swizzleProblemMethod:rowModel];
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecRuntime_apply]) {
         [self applyMethod:rowModel];

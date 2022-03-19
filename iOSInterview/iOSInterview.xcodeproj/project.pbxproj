@@ -21,6 +21,7 @@
 		E018F44727CE15EB00A3B0B0 /* MSYPlayAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F44627CE15EB00A3B0B0 /* MSYPlayAudioViewController.m */; };
 		E018F44A27CE163300A3B0B0 /* MSYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F44927CE163300A3B0B0 /* MSYAudioPlayer.m */; };
 		E018F44D27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E018F44C27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 */; };
+		E01B45AB27E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = E01B45AA27E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.m */; };
 		E01CDCE527DEDC71004CEBFD /* NSObject+WMSafeKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = E01CDCE327DEDC71004CEBFD /* NSObject+WMSafeKVO.m */; };
 		E01CDCEC27DF134E004CEBFD /* MSYBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01CDCEB27DF134E004CEBFD /* MSYBaseListViewController.m */; };
 		E01CDCEF27DF13E0004CEBFD /* MSYKVCListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01CDCEE27DF13E0004CEBFD /* MSYKVCListViewController.m */; };
@@ -82,6 +83,8 @@
 		E0C15B9A27717B270037CACF /* MSYRunLoopImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C15B9927717B270037CACF /* MSYRunLoopImageCell.m */; };
 		E0C15B9E277187910037CACF /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C15B9C277187910037CACF /* YYFPSLabel.m */; };
 		E0C15BA1277187980037CACF /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C15BA0277187980037CACF /* YYWeakProxy.m */; };
+		E0C2025727E23918007C2748 /* MSYStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C2025627E23918007C2748 /* MSYStudent.m */; };
+		E0C2025A27E24008007C2748 /* MSYHookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C2025927E24008007C2748 /* MSYHookHelper.m */; };
 		E0C4963426E1D4880068D5A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4963326E1D4880068D5A7 /* AppDelegate.m */; };
 		E0C4963A26E1D4880068D5A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4963926E1D4880068D5A7 /* ViewController.m */; };
 		E0C4963D26E1D4880068D5A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C4963B26E1D4880068D5A7 /* Main.storyboard */; };
@@ -117,6 +120,7 @@
 		E0D7AC5427730F0C00916246 /* MSYCoreGraphicsLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D7AC5327730F0C00916246 /* MSYCoreGraphicsLineView.m */; };
 		E0EB17DD27D998A200813AEA /* MSYBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EB17DC27D998A200813AEA /* MSYBlockViewController.m */; };
 		E0EB17E227D9C08E00813AEA /* MSYBlockPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EB17E127D9C08E00813AEA /* MSYBlockPresenter.m */; };
+		E0EDF0BD27E1DBB000C51476 /* MSYOtherPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EDF0BC27E1DBB000C51476 /* MSYOtherPerson.m */; };
 		E0F5C11427DF8C18008BC174 /* MSYBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C11327DF8C18008BC174 /* MSYBaseDao.m */; };
 		E0F5C11727DF8C65008BC174 /* MSYDb1Dao.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C11627DF8C65008BC174 /* MSYDb1Dao.m */; };
 		E0F5C11A27DF8C75008BC174 /* MSYDb2Dao.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C11927DF8C75008BC174 /* MSYDb2Dao.m */; };
@@ -155,6 +159,8 @@
 		E018F44827CE163300A3B0B0 /* MSYAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAudioPlayer.h; sourceTree = "<group>"; };
 		E018F44927CE163300A3B0B0 /* MSYAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAudioPlayer.m; sourceTree = "<group>"; };
 		E018F44C27CE170C00A3B0B0 /* SomethingJustLikeThis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SomethingJustLikeThis.mp3; sourceTree = "<group>"; };
+		E01B45A927E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MSYCrashProtector.h"; sourceTree = "<group>"; };
+		E01B45AA27E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MSYCrashProtector.m"; sourceTree = "<group>"; };
 		E01CDCE327DEDC71004CEBFD /* NSObject+WMSafeKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WMSafeKVO.m"; sourceTree = "<group>"; };
 		E01CDCE427DEDC71004CEBFD /* NSObject+WMSafeKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WMSafeKVO.h"; sourceTree = "<group>"; };
 		E01CDCEA27DF134E004CEBFD /* MSYBaseListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBaseListViewController.h; sourceTree = "<group>"; };
@@ -290,6 +296,10 @@
 		E0C15B9D277187910037CACF /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		E0C15B9F277187980037CACF /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		E0C15BA0277187980037CACF /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		E0C2025527E23918007C2748 /* MSYStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYStudent.h; sourceTree = "<group>"; };
+		E0C2025627E23918007C2748 /* MSYStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYStudent.m; sourceTree = "<group>"; };
+		E0C2025827E24008007C2748 /* MSYHookHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYHookHelper.h; sourceTree = "<group>"; };
+		E0C2025927E24008007C2748 /* MSYHookHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYHookHelper.m; sourceTree = "<group>"; };
 		E0C4962F26E1D4880068D5A7 /* iOSInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C4963226E1D4880068D5A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0C4963326E1D4880068D5A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -367,6 +377,8 @@
 		E0EB17E027D9C08E00813AEA /* MSYBlockPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBlockPresenter.h; sourceTree = "<group>"; };
 		E0EB17E127D9C08E00813AEA /* MSYBlockPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBlockPresenter.m; sourceTree = "<group>"; };
 		E0EB17E327D9C0B100813AEA /* MSYBlockPresenterIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBlockPresenterIO.h; sourceTree = "<group>"; };
+		E0EDF0BB27E1DBB000C51476 /* MSYOtherPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYOtherPerson.h; sourceTree = "<group>"; };
+		E0EDF0BC27E1DBB000C51476 /* MSYOtherPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYOtherPerson.m; sourceTree = "<group>"; };
 		E0F5C11227DF8C18008BC174 /* MSYBaseDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYBaseDao.h; sourceTree = "<group>"; };
 		E0F5C11327DF8C18008BC174 /* MSYBaseDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYBaseDao.m; sourceTree = "<group>"; };
 		E0F5C11527DF8C65008BC174 /* MSYDb1Dao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDb1Dao.h; sourceTree = "<group>"; };
@@ -881,6 +893,10 @@
 				E0A4BF6026E5F738003459C7 /* MSYPerson.m */,
 				E0A4BF6526E5F851003459C7 /* NSObject+MSYJson.h */,
 				E0A4BF6626E5F851003459C7 /* NSObject+MSYJson.m */,
+				E0EDF0BB27E1DBB000C51476 /* MSYOtherPerson.h */,
+				E0EDF0BC27E1DBB000C51476 /* MSYOtherPerson.m */,
+				E0C2025527E23918007C2748 /* MSYStudent.h */,
+				E0C2025627E23918007C2748 /* MSYStudent.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -975,6 +991,17 @@
 				E0C15B9C277187910037CACF /* YYFPSLabel.m */,
 			);
 			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
+		E0C2025127E2320B007C2748 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E0C2025827E24008007C2748 /* MSYHookHelper.h */,
+				E0C2025927E24008007C2748 /* MSYHookHelper.m */,
+				E01B45A927E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.h */,
+				E01B45AA27E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		E0C4962626E1D4880068D5A7 = {
@@ -1136,6 +1163,7 @@
 		E0C496A226E3790D0068D5A7 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				E0C2025127E2320B007C2748 /* Category */,
 				E0A4BF5E26E5F72B003459C7 /* Model */,
 				E0C496A426E379270068D5A7 /* Controller */,
 				E0C496A326E3791F0068D5A7 /* Presenter */,
@@ -1493,6 +1521,7 @@
 				E0C6530C276C8527006C74DC /* MSYOperationQueueHandleCell.m in Sources */,
 				E0C15B9727717A840037CACF /* MSYRunLoopImageViewController.m in Sources */,
 				E0D7AC402772FFF700916246 /* MSYMediaLayerViewController.m in Sources */,
+				E0C2025A27E24008007C2748 /* MSYHookHelper.m in Sources */,
 				E008030527DB23880038559E /* MSYKVOModel.m in Sources */,
 				E0A4BF6726E5F851003459C7 /* NSObject+MSYJson.m in Sources */,
 				E048C6C727CE5EEF00556491 /* MSYLocationManager.m in Sources */,
@@ -1556,6 +1585,7 @@
 				E0C4969F26E32A5D0068D5A7 /* UIImage+MSYWatermark.m in Sources */,
 				E048C6C427CE595500556491 /* MSYProxy.m in Sources */,
 				E008030C27DB36F40038559E /* MSYKVOListViewController.m in Sources */,
+				E01B45AB27E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.m in Sources */,
 				E0C15BA1277187980037CACF /* YYWeakProxy.m in Sources */,
 				E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */,
 				E022D94327C4E1FB008631E3 /* MSYMotionManager.m in Sources */,
@@ -1570,6 +1600,7 @@
 				E0EB17E227D9C08E00813AEA /* MSYBlockPresenter.m in Sources */,
 				E018F44727CE15EB00A3B0B0 /* MSYPlayAudioViewController.m in Sources */,
 				E0C496AC26E379750068D5A7 /* MSYRuntimePresenter.m in Sources */,
+				E0C2025727E23918007C2748 /* MSYStudent.m in Sources */,
 				E0D7AC362772DBD700916246 /* YYTransaction.m in Sources */,
 				E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */,
 				E022D93F27C4D5A9008631E3 /* MSYOpenHole3DItemView.m in Sources */,
@@ -1578,6 +1609,7 @@
 				E02868D227D1BF36009F6631 /* MSYAudiSportCar.m in Sources */,
 				E0D7AC5127730B8800916246 /* MSYCoreGraphicsRectangularCell.m in Sources */,
 				E0C922D827C781C000848707 /* MSYDataStructureListViewController.m in Sources */,
+				E0EDF0BD27E1DBB000C51476 /* MSYOtherPerson.m in Sources */,
 				E0C496A726E3793A0068D5A7 /* MSYRuntimeViewController.m in Sources */,
 				E022D93827C4C791008631E3 /* MSYOpenHole3DBannerViewController.m in Sources */,
 				E0EB17DD27D998A200813AEA /* MSYBlockViewController.m in Sources */,

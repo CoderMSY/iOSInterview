@@ -58,6 +58,7 @@
     if ([rowData.extraInfo isKindOfClass:[MSYCommonTitleDetailFrameModel class]]) {
         MSYCommonTitleDetailFrameModel *fModel = (MSYCommonTitleDetailFrameModel *)rowData.extraInfo;
         
+        self.selectionStyle = fModel.isNeedSelectStyle ? UITableViewCellSelectionStyleDefault : UITableViewCellSelectionStyleNone;
         self.titleLab.text = fModel.title;
         self.titleLab.font = fModel.titleLabFont;
         self.detailLab.text = fModel.detail;

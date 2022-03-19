@@ -17,6 +17,7 @@ static CGFloat const kCommonTDCell_margin = 15;//!<边距
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *detail;
+@property (nonatomic, assign) BOOL isNeedSelectStyle;
 
 @property (nonatomic, strong) UIFont *titleLabFont;
 @property (nonatomic, strong) UIFont *detailLabFont;

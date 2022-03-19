@@ -18,6 +18,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)run;
 - (void)test;
+- (void)personInstanceMethod;
+///子类父类都未实现
+- (void)personInstanceMethodIsNotImpl;
+
++ (void)personClassMethod;
+///子类父类都未实现
++ (void)personClassMethodIsNotImpl;
+
+
+- (void)unrecognizedMethod;
 
 @end
 
