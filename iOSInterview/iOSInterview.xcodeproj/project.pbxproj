@@ -14,6 +14,12 @@
 		E008030F27DB37C00038559E /* MSYKVOListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E008030E27DB37C00038559E /* MSYKVOListCell.m */; };
 		E008031327DB408A0038559E /* FBKVOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E008031227DB408A0038559E /* FBKVOListViewController.m */; };
 		E008031627DB40C80038559E /* FBKVOListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E008031527DB40C80038559E /* FBKVOListCell.m */; };
+		E016C4A027E5D85500612A59 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E016C49F27E5D85500612A59 /* CloudKit.framework */; };
+		E016C4A427E5E8C000612A59 /* MSYICoudKeyValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E016C4A327E5E8C000612A59 /* MSYICoudKeyValueViewController.m */; };
+		E016C4A727E5F13500612A59 /* MSYICoudDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E016C4A627E5F13500612A59 /* MSYICoudDocumentViewController.m */; };
+		E016C4AA27E62AF000612A59 /* MSYICoudDocumentAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E016C4A927E62AF000612A59 /* MSYICoudDocumentAddViewController.m */; };
+		E016C4AD27E638EF00612A59 /* MSYICloudTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E016C4AC27E638EF00612A59 /* MSYICloudTool.m */; };
+		E016C4B027E63B6D00612A59 /* MSYDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E016C4AF27E63B6D00612A59 /* MSYDocument.m */; };
 		E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */; };
 		E018CEA027B0F78000A898A8 /* MSYCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E018CE9F27B0F78000A898A8 /* MSYCustomModel.m */; };
 		E018F43C27CE122100A3B0B0 /* MSYFeatureListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E018F43B27CE122100A3B0B0 /* MSYFeatureListViewController.m */; };
@@ -74,6 +80,9 @@
 		E06C4EC027744D4B00E07EF5 /* MSYViewCtrIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = E06C4EBF27744D4B00E07EF5 /* MSYViewCtrIntercepter.m */; };
 		E06C4EC32774542B00E07EF5 /* UIViewController+MSYHookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E06C4EC22774542B00E07EF5 /* UIViewController+MSYHookHelper.m */; };
 		E0765DDA27E02E5D00926E37 /* MSYEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E0765DD927E02E5D00926E37 /* MSYEncryptHelper.m */; };
+		E079A31127E76D9E00FAEBFE /* MSYCloudKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E079A31027E76D9E00FAEBFE /* MSYCloudKitViewController.m */; };
+		E079A31427E76DF000FAEBFE /* MSYCloudKitAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E079A31327E76DF000FAEBFE /* MSYCloudKitAddViewController.m */; };
+		E079A31727E76E7B00FAEBFE /* MSYCloudKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E079A31627E76E7B00FAEBFE /* MSYCloudKitTool.m */; };
 		E0A4BF6126E5F738003459C7 /* MSYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A4BF6026E5F738003459C7 /* MSYPerson.m */; };
 		E0A4BF6726E5F851003459C7 /* NSObject+MSYJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A4BF6626E5F851003459C7 /* NSObject+MSYJson.m */; };
 		E0A4BF6F26E5FCF6003459C7 /* MSYRunloopPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A4BF6E26E5FCF6003459C7 /* MSYRunloopPresenter.m */; };
@@ -144,6 +153,18 @@
 		E008031227DB408A0038559E /* FBKVOListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBKVOListViewController.m; sourceTree = "<group>"; };
 		E008031427DB40C80038559E /* FBKVOListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBKVOListCell.h; sourceTree = "<group>"; };
 		E008031527DB40C80038559E /* FBKVOListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBKVOListCell.m; sourceTree = "<group>"; };
+		E016C49E27E5D74E00612A59 /* iOSInterview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSInterview.entitlements; sourceTree = "<group>"; };
+		E016C49F27E5D85500612A59 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		E016C4A227E5E8C000612A59 /* MSYICoudKeyValueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYICoudKeyValueViewController.h; sourceTree = "<group>"; };
+		E016C4A327E5E8C000612A59 /* MSYICoudKeyValueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYICoudKeyValueViewController.m; sourceTree = "<group>"; };
+		E016C4A527E5F13500612A59 /* MSYICoudDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYICoudDocumentViewController.h; sourceTree = "<group>"; };
+		E016C4A627E5F13500612A59 /* MSYICoudDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYICoudDocumentViewController.m; sourceTree = "<group>"; };
+		E016C4A827E62AF000612A59 /* MSYICoudDocumentAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYICoudDocumentAddViewController.h; sourceTree = "<group>"; };
+		E016C4A927E62AF000612A59 /* MSYICoudDocumentAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYICoudDocumentAddViewController.m; sourceTree = "<group>"; };
+		E016C4AB27E638EF00612A59 /* MSYICloudTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYICloudTool.h; sourceTree = "<group>"; };
+		E016C4AC27E638EF00612A59 /* MSYICloudTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYICloudTool.m; sourceTree = "<group>"; };
+		E016C4AE27E63B6D00612A59 /* MSYDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDocument.h; sourceTree = "<group>"; };
+		E016C4AF27E63B6D00612A59 /* MSYDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYDocument.m; sourceTree = "<group>"; };
 		E018CE9827B0CFF700A898A8 /* MSYAutoreleasePoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAutoreleasePoolViewController.h; sourceTree = "<group>"; };
 		E018CE9927B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAutoreleasePoolViewController.m; sourceTree = "<group>"; };
 		E018CE9E27B0F78000A898A8 /* MSYCustomModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCustomModel.h; sourceTree = "<group>"; };
@@ -274,6 +295,12 @@
 		E0765DD727E0280600926E37 /* MSYDb2DaoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYDb2DaoProtocol.h; sourceTree = "<group>"; };
 		E0765DD827E02E5D00926E37 /* MSYEncryptHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYEncryptHelper.h; sourceTree = "<group>"; };
 		E0765DD927E02E5D00926E37 /* MSYEncryptHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYEncryptHelper.m; sourceTree = "<group>"; };
+		E079A30F27E76D9E00FAEBFE /* MSYCloudKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCloudKitViewController.h; sourceTree = "<group>"; };
+		E079A31027E76D9E00FAEBFE /* MSYCloudKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCloudKitViewController.m; sourceTree = "<group>"; };
+		E079A31227E76DF000FAEBFE /* MSYCloudKitAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCloudKitAddViewController.h; sourceTree = "<group>"; };
+		E079A31327E76DF000FAEBFE /* MSYCloudKitAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCloudKitAddViewController.m; sourceTree = "<group>"; };
+		E079A31527E76E7B00FAEBFE /* MSYCloudKitTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYCloudKitTool.h; sourceTree = "<group>"; };
+		E079A31627E76E7B00FAEBFE /* MSYCloudKitTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYCloudKitTool.m; sourceTree = "<group>"; };
 		E0A4BF5926E5BFC4003459C7 /* MSYRuntimeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYRuntimeDefine.h; sourceTree = "<group>"; };
 		E0A4BF5F26E5F738003459C7 /* MSYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYPerson.h; sourceTree = "<group>"; };
 		E0A4BF6026E5F738003459C7 /* MSYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYPerson.m; sourceTree = "<group>"; };
@@ -396,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E3ECC15E968DCECC31B9E7 /* Pods_iOSInterview.framework in Frameworks */,
+				E016C4A027E5D85500612A59 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +478,24 @@
 			path = FBKVOList;
 			sourceTree = "<group>";
 		};
+		E016C4A127E5E89800612A59 /* ICloud */ = {
+			isa = PBXGroup;
+			children = (
+				E016C4A227E5E8C000612A59 /* MSYICoudKeyValueViewController.h */,
+				E016C4A327E5E8C000612A59 /* MSYICoudKeyValueViewController.m */,
+				E016C4A527E5F13500612A59 /* MSYICoudDocumentViewController.h */,
+				E016C4A627E5F13500612A59 /* MSYICoudDocumentViewController.m */,
+				E016C4A827E62AF000612A59 /* MSYICoudDocumentAddViewController.h */,
+				E016C4A927E62AF000612A59 /* MSYICoudDocumentAddViewController.m */,
+				E016C4AB27E638EF00612A59 /* MSYICloudTool.h */,
+				E016C4AC27E638EF00612A59 /* MSYICloudTool.m */,
+				E016C4AE27E63B6D00612A59 /* MSYDocument.h */,
+				E016C4AF27E63B6D00612A59 /* MSYDocument.m */,
+				E079A30E27E76D8400FAEBFE /* CloudKit */,
+			);
+			path = ICloud;
+			sourceTree = "<group>";
+		};
 		E018CE9727B0CF9000A898A8 /* AutoreleasePool */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +510,7 @@
 		E018F43827CE110300A3B0B0 /* FeatureList */ = {
 			isa = PBXGroup;
 			children = (
+				E016C4A127E5E89800612A59 /* ICloud */,
 				E06B0C6027DF83C800D5BC32 /* Database */,
 				E018F43E27CE12C200A3B0B0 /* BgKeepAlive */,
 				E018F43927CE11E700A3B0B0 /* FeatureList */,
@@ -886,6 +933,19 @@
 			path = Intercepter;
 			sourceTree = "<group>";
 		};
+		E079A30E27E76D8400FAEBFE /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				E079A30F27E76D9E00FAEBFE /* MSYCloudKitViewController.h */,
+				E079A31027E76D9E00FAEBFE /* MSYCloudKitViewController.m */,
+				E079A31227E76DF000FAEBFE /* MSYCloudKitAddViewController.h */,
+				E079A31327E76DF000FAEBFE /* MSYCloudKitAddViewController.m */,
+				E079A31527E76E7B00FAEBFE /* MSYCloudKitTool.h */,
+				E079A31627E76E7B00FAEBFE /* MSYCloudKitTool.m */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
 		E0A4BF5E26E5F72B003459C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1025,6 +1085,7 @@
 		E0C4963126E1D4880068D5A7 /* iOSInterview */ = {
 			isa = PBXGroup;
 			children = (
+				E016C49E27E5D74E00612A59 /* iOSInterview.entitlements */,
 				E0C4963226E1D4880068D5A7 /* AppDelegate.h */,
 				E0C4963326E1D4880068D5A7 /* AppDelegate.m */,
 				E0D7AC2C2772DBB300916246 /* 3rd */,
@@ -1391,6 +1452,7 @@
 		FF667BEB3C22332D79F8C3DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E016C49F27E5D85500612A59 /* CloudKit.framework */,
 				EB80A074F4B59114FDAA9D80 /* Pods_iOSInterview.framework */,
 			);
 			name = Frameworks;
@@ -1511,6 +1573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E079A31727E76E7B00FAEBFE /* MSYCloudKitTool.m in Sources */,
 				E0A4BF8226E6158C003459C7 /* MSYPermanantThread.m in Sources */,
 				E02868CC27D1BF0B009F6631 /* MSYAudiBusinessCar.m in Sources */,
 				E0C4965926E206B40068D5A7 /* MSYTabBarCtrConfig.m in Sources */,
@@ -1536,13 +1599,16 @@
 				E02868E227D1CB20009F6631 /* MSYAudiFactory.m in Sources */,
 				E008031327DB408A0038559E /* FBKVOListViewController.m in Sources */,
 				E06B0C6427DF840500D5BC32 /* MSYDatabaseListViewController.m in Sources */,
+				E079A31427E76DF000FAEBFE /* MSYCloudKitAddViewController.m in Sources */,
 				E06C4EBB2774211500E07EF5 /* MSYBaseViewController.m in Sources */,
 				E02868C927D1BEF0009F6631 /* MSYBmwBusinessCar.m in Sources */,
 				E0D7AC3B2772DC4600916246 /* MSYLabel.m in Sources */,
+				E016C4A727E5F13500612A59 /* MSYICoudDocumentViewController.m in Sources */,
 				E065298227707D4A00639B67 /* MSYCommonTitleDetailCell.m in Sources */,
 				E0C65309276C75C3006C74DC /* MSYOperation.m in Sources */,
 				E02868C627D1BECF009F6631 /* MSYBenzBusinessCar.m in Sources */,
 				E0A4BF6F26E5FCF6003459C7 /* MSYRunloopPresenter.m in Sources */,
+				E016C4AD27E638EF00612A59 /* MSYICloudTool.m in Sources */,
 				E02868F527D1DC36009F6631 /* MSYBenzCarImpl.m in Sources */,
 				E0C15B9A27717B270037CACF /* MSYRunLoopImageCell.m in Sources */,
 				E01CDCEF27DF13E0004CEBFD /* MSYKVCListViewController.m in Sources */,
@@ -1588,6 +1654,7 @@
 				E01B45AB27E2DFCF000BC6B7 /* NSArray+MSYCrashProtector.m in Sources */,
 				E0C15BA1277187980037CACF /* YYWeakProxy.m in Sources */,
 				E022D93227C497F3008631E3 /* MSYOpenHole3DViewController.m in Sources */,
+				E079A31127E76D9E00FAEBFE /* MSYCloudKitViewController.m in Sources */,
 				E022D94327C4E1FB008631E3 /* MSYMotionManager.m in Sources */,
 				E02868DC27D1C61E009F6631 /* MSYBenzFactory.m in Sources */,
 				E02868D627D1C457009F6631 /* MSYMethodFactoryViewController.m in Sources */,
@@ -1597,6 +1664,7 @@
 				E02868BC27D1BCDC009F6631 /* MSYSimpleFactory.m in Sources */,
 				E02868B127D1B705009F6631 /* MSYDesignPatternListViewController.m in Sources */,
 				E018F44227CE131200A3B0B0 /* MSYBgKeepAliveListViewController.m in Sources */,
+				E016C4A427E5E8C000612A59 /* MSYICoudKeyValueViewController.m in Sources */,
 				E0EB17E227D9C08E00813AEA /* MSYBlockPresenter.m in Sources */,
 				E018F44727CE15EB00A3B0B0 /* MSYPlayAudioViewController.m in Sources */,
 				E0C496AC26E379750068D5A7 /* MSYRuntimePresenter.m in Sources */,
@@ -1607,6 +1675,8 @@
 				E0765DDA27E02E5D00926E37 /* MSYEncryptHelper.m in Sources */,
 				E02868C327D1BE97009F6631 /* MSYBenzSportCar.m in Sources */,
 				E02868D227D1BF36009F6631 /* MSYAudiSportCar.m in Sources */,
+				E016C4AA27E62AF000612A59 /* MSYICoudDocumentAddViewController.m in Sources */,
+				E016C4B027E63B6D00612A59 /* MSYDocument.m in Sources */,
 				E0D7AC5127730B8800916246 /* MSYCoreGraphicsRectangularCell.m in Sources */,
 				E0C922D827C781C000848707 /* MSYDataStructureListViewController.m in Sources */,
 				E0EDF0BD27E1DBB000C51476 /* MSYOtherPerson.m in Sources */,
@@ -1767,6 +1837,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSInterview/iOSInterview.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQN84YY35D;
 				INFOPLIST_FILE = iOSInterview/Info.plist;
@@ -1775,7 +1846,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Mercy.iOSInterview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FancyPower.iOSInterview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1787,6 +1858,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSInterview/iOSInterview.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQN84YY35D;
 				INFOPLIST_FILE = iOSInterview/Info.plist;
@@ -1795,7 +1867,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Mercy.iOSInterview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FancyPower.iOSInterview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

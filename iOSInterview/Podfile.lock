@@ -1,5 +1,6 @@
 PODS:
   - Aspects (1.4.1)
+  - DateTools (2.0.0)
   - FMDB/SQLCipher (2.7.5):
     - SQLCipher
   - KVOController (1.2.0)
@@ -25,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - Aspects
+  - DateTools
   - FMDB/SQLCipher
   - KVOController
   - Masonry
@@ -41,6 +43,7 @@ SPEC REPOS:
     - MSYCategory
   trunk:
     - Aspects
+    - DateTools
     - FMDB
     - KVOController
     - Masonry
@@ -55,6 +58,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -69,6 +73,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZYBannerView: 7a1c76cab9a5438bf5c7529b8fc99cacb5af5898
 
-PODFILE CHECKSUM: 695ff565d5527df3d348b97882d62f0846f31c23
+PODFILE CHECKSUM: b4405c303ccdd73e448110c8eab96ffa854c1fba
 
 COCOAPODS: 1.11.2

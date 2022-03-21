@@ -15,6 +15,9 @@
 #import "MSYDatabaseListViewController.h"
 #import "MSYBgKeepAliveListViewController.h"
 #import "UIImage+MSYWatermark.h"
+#import "MSYICoudKeyValueViewController.h"
+#import "MSYICoudDocumentViewController.h"
+#import "MSYCloudKitViewController.h"
 
 @interface MSYFeatureListViewController () <MSYTableViewProtocol>
 
@@ -52,6 +55,14 @@
             kSec_headerTitle : kSecFeature_SQL,
             kSec_rowContent : @[
                 kRowFeature_databaseFileEncrpt,
+            ],
+        },
+        @{
+            kSec_headerTitle : kSecFeature_iCloud,
+            kSec_rowContent : @[
+                kRowFeature_iCloud_keyValue,
+                kRowFeature_iCloud_document,
+                kRowFeature_iCloud_cloudKit,
             ],
         },
         @{
@@ -105,7 +116,10 @@
             [self pushNextPageWithCtr:MSYDatabaseListViewController.new title:rowModel.title];
         }
     }
-    if ([sectionModel.headerTitle isEqualToString:kSecFeature_background]) {
+    else if ([sectionModel.headerTitle isEqualToString:kSecFeature_iCloud]) {
+        [self exampleIClound:rowModel];
+    }
+    else if ([sectionModel.headerTitle isEqualToString:kSecFeature_background]) {
         [self exampleBackground:rowModel];
     }
     else if ([sectionModel.headerTitle isEqualToString:kSecFeature_image]) {
@@ -118,6 +132,19 @@
         MSYBgKeepAliveListViewController *ctr = [[MSYBgKeepAliveListViewController alloc] init];
         ctr.title = rowModel.title;
         [self.navigationController pushViewController:ctr animated:YES];
+    }
+}
+
+#pragma mark - iCloud
+- (void)exampleIClound:(MSYCommonTableRow *)rowModel {
+    if ([rowModel.title isEqualToString:kRowFeature_iCloud_keyValue]) {
+        [self pushNextPageWithCtr:MSYICoudKeyValueViewController.new title:rowModel.title];
+    }
+    else if ([rowModel.title isEqualToString:kRowFeature_iCloud_document]) {
+        [self pushNextPageWithCtr:MSYICoudDocumentViewController.new title:rowModel.title];
+    }
+    else if ([rowModel.title isEqualToString:kRowFeature_iCloud_cloudKit]) {
+        [self pushNextPageWithCtr:MSYCloudKitViewController.new title:rowModel.title];
     }
 }
 
