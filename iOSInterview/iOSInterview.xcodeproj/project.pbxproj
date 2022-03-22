@@ -68,6 +68,13 @@
 		E02FCD3A27CCB2070013C8AB /* MSYThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E02FCD3927CCB2070013C8AB /* MSYThread.m */; };
 		E048C6C427CE595500556491 /* MSYProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E048C6C327CE595500556491 /* MSYProxy.m */; };
 		E048C6C727CE5EEF00556491 /* MSYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E048C6C627CE5EEF00556491 /* MSYLocationManager.m */; };
+		E063732727E9A8DF00D18B20 /* MSYAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E063732627E9A8DF00D18B20 /* MSYAdapterViewController.m */; };
+		E063732D27E9AAEA00D18B20 /* MSYClassPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = E063732C27E9AAEA00D18B20 /* MSYClassPhone.m */; };
+		E063733027E9AB7300D18B20 /* MSYClassAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E063732F27E9AB7300D18B20 /* MSYClassAdapter.m */; };
+		E063733327E9AD2C00D18B20 /* MSYInstancePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = E063733227E9AD2C00D18B20 /* MSYInstancePhone.m */; };
+		E063733627E9AD9C00D18B20 /* MSYInstanceAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E063733527E9AD9C00D18B20 /* MSYInstanceAdapter.m */; };
+		E063733A27E9B03400D18B20 /* MSYInterfaceAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E063733927E9B03400D18B20 /* MSYInterfaceAdapter.m */; };
+		E063733D27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E063733C27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.m */; };
 		E065297827701A9200639B67 /* MSYGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E065297727701A9200639B67 /* MSYGCDViewController.m */; };
 		E065297D2770759D00639B67 /* MSYThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E065297C2770759D00639B67 /* MSYThreadViewController.m */; };
 		E065298227707D4A00639B67 /* MSYCommonTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E065298127707D4A00639B67 /* MSYCommonTitleDetailCell.m */; };
@@ -266,6 +273,23 @@
 		E048C6C327CE595500556491 /* MSYProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYProxy.m; sourceTree = "<group>"; };
 		E048C6C527CE5EEF00556491 /* MSYLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYLocationManager.h; sourceTree = "<group>"; };
 		E048C6C627CE5EEF00556491 /* MSYLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYLocationManager.m; sourceTree = "<group>"; };
+		E063732527E9A8DF00D18B20 /* MSYAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAdapterViewController.h; sourceTree = "<group>"; };
+		E063732627E9A8DF00D18B20 /* MSYAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYAdapterViewController.m; sourceTree = "<group>"; };
+		E063732927E9AAA400D18B20 /* MSYMicroUSBProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYMicroUSBProtocol.h; sourceTree = "<group>"; };
+		E063732A27E9AACC00D18B20 /* MSYTypeCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYTypeCProtocol.h; sourceTree = "<group>"; };
+		E063732B27E9AAEA00D18B20 /* MSYClassPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYClassPhone.h; sourceTree = "<group>"; };
+		E063732C27E9AAEA00D18B20 /* MSYClassPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYClassPhone.m; sourceTree = "<group>"; };
+		E063732E27E9AB7300D18B20 /* MSYClassAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYClassAdapter.h; sourceTree = "<group>"; };
+		E063732F27E9AB7300D18B20 /* MSYClassAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYClassAdapter.m; sourceTree = "<group>"; };
+		E063733127E9AD2C00D18B20 /* MSYInstancePhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYInstancePhone.h; sourceTree = "<group>"; };
+		E063733227E9AD2C00D18B20 /* MSYInstancePhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYInstancePhone.m; sourceTree = "<group>"; };
+		E063733427E9AD9C00D18B20 /* MSYInstanceAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYInstanceAdapter.h; sourceTree = "<group>"; };
+		E063733527E9AD9C00D18B20 /* MSYInstanceAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYInstanceAdapter.m; sourceTree = "<group>"; };
+		E063733727E9AFD200D18B20 /* MSYAllPortsProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYAllPortsProtocol.h; sourceTree = "<group>"; };
+		E063733827E9B03400D18B20 /* MSYInterfaceAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYInterfaceAdapter.h; sourceTree = "<group>"; };
+		E063733927E9B03400D18B20 /* MSYInterfaceAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYInterfaceAdapter.m; sourceTree = "<group>"; };
+		E063733B27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYTypeCToVGAAdapter.h; sourceTree = "<group>"; };
+		E063733C27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYTypeCToVGAAdapter.m; sourceTree = "<group>"; };
 		E065297627701A9200639B67 /* MSYGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYGCDViewController.h; sourceTree = "<group>"; };
 		E065297727701A9200639B67 /* MSYGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYGCDViewController.m; sourceTree = "<group>"; };
 		E065297927702A6200639B67 /* MSYGCDDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYGCDDefine.h; sourceTree = "<group>"; };
@@ -724,6 +748,8 @@
 		E02868B427D1B89D009F6631 /* Creational */ = {
 			isa = PBXGroup;
 			children = (
+				E063732327E9A89300D18B20 /* Creational */,
+				E063732227E9A87A00D18B20 /* Structural */,
 				E02868B527D1B8B0009F6631 /* FactoryPattern */,
 			);
 			path = Creational;
@@ -806,6 +832,53 @@
 				E02868FA27D1DD7F009F6631 /* MSYAudiCarImpl.m */,
 			);
 			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		E063732227E9A87A00D18B20 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				E063732427E9A8A600D18B20 /* Adapter */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		E063732327E9A89300D18B20 /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		E063732427E9A8A600D18B20 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E063732527E9A8DF00D18B20 /* MSYAdapterViewController.h */,
+				E063732627E9A8DF00D18B20 /* MSYAdapterViewController.m */,
+				E063732927E9AAA400D18B20 /* MSYMicroUSBProtocol.h */,
+				E063732A27E9AACC00D18B20 /* MSYTypeCProtocol.h */,
+				E063732B27E9AAEA00D18B20 /* MSYClassPhone.h */,
+				E063732C27E9AAEA00D18B20 /* MSYClassPhone.m */,
+				E063732E27E9AB7300D18B20 /* MSYClassAdapter.h */,
+				E063732F27E9AB7300D18B20 /* MSYClassAdapter.m */,
+				E063733127E9AD2C00D18B20 /* MSYInstancePhone.h */,
+				E063733227E9AD2C00D18B20 /* MSYInstancePhone.m */,
+				E063733427E9AD9C00D18B20 /* MSYInstanceAdapter.h */,
+				E063733527E9AD9C00D18B20 /* MSYInstanceAdapter.m */,
+				E063732827E9A92900D18B20 /* InterfaceAdapter */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E063732827E9A92900D18B20 /* InterfaceAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				E063733727E9AFD200D18B20 /* MSYAllPortsProtocol.h */,
+				E063733827E9B03400D18B20 /* MSYInterfaceAdapter.h */,
+				E063733927E9B03400D18B20 /* MSYInterfaceAdapter.m */,
+				E063733B27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.h */,
+				E063733C27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.m */,
+			);
+			path = InterfaceAdapter;
 			sourceTree = "<group>";
 		};
 		E065297527701A7600639B67 /* GCD */ = {
@@ -1578,7 +1651,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E063733D27E9B0EA00D18B20 /* MSYTypeCToVGAAdapter.m in Sources */,
 				E079A31727E76E7B00FAEBFE /* MSYCloudKitTool.m in Sources */,
+				E063733327E9AD2C00D18B20 /* MSYInstancePhone.m in Sources */,
 				E0A4BF8226E6158C003459C7 /* MSYPermanantThread.m in Sources */,
 				E02868CC27D1BF0B009F6631 /* MSYAudiBusinessCar.m in Sources */,
 				E0C4965926E206B40068D5A7 /* MSYTabBarCtrConfig.m in Sources */,
@@ -1603,6 +1678,7 @@
 				E008030F27DB37C00038559E /* MSYKVOListCell.m in Sources */,
 				E02868E227D1CB20009F6631 /* MSYAudiFactory.m in Sources */,
 				E008031327DB408A0038559E /* FBKVOListViewController.m in Sources */,
+				E063732727E9A8DF00D18B20 /* MSYAdapterViewController.m in Sources */,
 				E06B0C6427DF840500D5BC32 /* MSYDatabaseListViewController.m in Sources */,
 				E079A31427E76DF000FAEBFE /* MSYCloudKitAddViewController.m in Sources */,
 				E06C4EBB2774211500E07EF5 /* MSYBaseViewController.m in Sources */,
@@ -1633,6 +1709,7 @@
 				E02868E627D1CBCD009F6631 /* MSYAbstractFactoryViewController.m in Sources */,
 				E0C4966926E20BB40068D5A7 /* MSYAlgorithmViewController.m in Sources */,
 				E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */,
+				E063732D27E9AAEA00D18B20 /* MSYClassPhone.m in Sources */,
 				E0D7AC4E27730A8C00916246 /* MSYCoreGraphicsCell.m in Sources */,
 				E06C4EC32774542B00E07EF5 /* UIViewController+MSYHookHelper.m in Sources */,
 				E065298527707E1000639B67 /* MSYCommonTitleDetailFrameModel.m in Sources */,
@@ -1654,6 +1731,7 @@
 				E008030227DB23770038559E /* MSYKVOViewController.m in Sources */,
 				E0D7AC462773048300916246 /* MSYCoreGraphicsViewController.m in Sources */,
 				E0C4967526E21CF10068D5A7 /* MSYAlgorithmTool.m in Sources */,
+				E063733627E9AD9C00D18B20 /* MSYInstanceAdapter.m in Sources */,
 				E0C4969F26E32A5D0068D5A7 /* UIImage+MSYWatermark.m in Sources */,
 				E048C6C427CE595500556491 /* MSYProxy.m in Sources */,
 				E008030C27DB36F40038559E /* MSYKVOListViewController.m in Sources */,
@@ -1679,6 +1757,7 @@
 				E018CE9A27B0CFF700A898A8 /* MSYAutoreleasePoolViewController.m in Sources */,
 				E022D93F27C4D5A9008631E3 /* MSYOpenHole3DItemView.m in Sources */,
 				E0765DDA27E02E5D00926E37 /* MSYEncryptHelper.m in Sources */,
+				E063733027E9AB7300D18B20 /* MSYClassAdapter.m in Sources */,
 				E02868C327D1BE97009F6631 /* MSYBenzSportCar.m in Sources */,
 				E02868D227D1BF36009F6631 /* MSYAudiSportCar.m in Sources */,
 				E016C4AA27E62AF000612A59 /* MSYICoudDocumentAddViewController.m in Sources */,
@@ -1696,6 +1775,7 @@
 				E0F5C11427DF8C18008BC174 /* MSYBaseDao.m in Sources */,
 				E02868CF27D1BF25009F6631 /* MSYBmwSportCar.m in Sources */,
 				E02868FB27D1DD7F009F6631 /* MSYAudiCarImpl.m in Sources */,
+				E063733A27E9B03400D18B20 /* MSYInterfaceAdapter.m in Sources */,
 				E022D93C27C4C985008631E3 /* MSYOpenHole3DBannerView.m in Sources */,
 				E02868DF27D1CA82009F6631 /* MSYBmwFactory.m in Sources */,
 				E02868C027D1BE19009F6631 /* MSYCar.m in Sources */,
