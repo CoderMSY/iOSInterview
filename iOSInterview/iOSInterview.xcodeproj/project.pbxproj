@@ -117,6 +117,7 @@
 		E0C922DD27C7829C00848707 /* MSYHashOCImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C922DC27C7829C00848707 /* MSYHashOCImplViewController.m */; };
 		E0C922E027C782DF00848707 /* MSYHashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C922DF27C782DF00848707 /* MSYHashTable.m */; };
 		E0C922E327C7844000848707 /* MSYSingleLinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C922E227C7844000848707 /* MSYSingleLinkedNode.m */; };
+		E0D033C127E84D6600DF46C1 /* MSYLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D033C027E84D6600DF46C1 /* MSYLagMonitor.m */; };
 		E0D7AC342772DBD700916246 /* YYAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D7AC2E2772DBD700916246 /* YYAsyncLayer.m */; };
 		E0D7AC352772DBD700916246 /* YYSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D7AC302772DBD700916246 /* YYSentinel.m */; };
 		E0D7AC362772DBD700916246 /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D7AC322772DBD700916246 /* YYTransaction.m */; };
@@ -377,6 +378,8 @@
 		E0C922DF27C782DF00848707 /* MSYHashTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYHashTable.m; sourceTree = "<group>"; };
 		E0C922E127C7844000848707 /* MSYSingleLinkedNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYSingleLinkedNode.h; sourceTree = "<group>"; };
 		E0C922E227C7844000848707 /* MSYSingleLinkedNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYSingleLinkedNode.m; sourceTree = "<group>"; };
+		E0D033BF27E84D6600DF46C1 /* MSYLagMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSYLagMonitor.h; sourceTree = "<group>"; };
+		E0D033C027E84D6600DF46C1 /* MSYLagMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSYLagMonitor.m; sourceTree = "<group>"; };
 		E0D7AC2E2772DBD700916246 /* YYAsyncLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAsyncLayer.m; sourceTree = "<group>"; };
 		E0D7AC2F2772DBD700916246 /* YYTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTransaction.h; sourceTree = "<group>"; };
 		E0D7AC302772DBD700916246 /* YYSentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSentinel.m; sourceTree = "<group>"; };
@@ -1019,6 +1022,8 @@
 				E02FCD3627CCB03A0013C8AB /* MSYCFPermanantThread.m */,
 				E02FCD3827CCB2070013C8AB /* MSYThread.h */,
 				E02FCD3927CCB2070013C8AB /* MSYThread.m */,
+				E0D033BF27E84D6600DF46C1 /* MSYLagMonitor.h */,
+				E0D033C027E84D6600DF46C1 /* MSYLagMonitor.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1624,6 +1629,7 @@
 				E06C4EC027744D4B00E07EF5 /* MSYViewCtrIntercepter.m in Sources */,
 				E022D93527C4C4FC008631E3 /* ATNavigationController.m in Sources */,
 				E0A4BF6126E5F738003459C7 /* MSYPerson.m in Sources */,
+				E0D033C127E84D6600DF46C1 /* MSYLagMonitor.m in Sources */,
 				E02868E627D1CBCD009F6631 /* MSYAbstractFactoryViewController.m in Sources */,
 				E0C4966926E20BB40068D5A7 /* MSYAlgorithmViewController.m in Sources */,
 				E0250A07271971AA00604984 /* MSYCollectionExampleView.m in Sources */,

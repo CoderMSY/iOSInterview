@@ -20,6 +20,7 @@
         kRowRunloop_thead_CFRunLoop,
         kRowRunloop_timer,
         kRowRunloop_monitorPerformanceLag,
+        kRowRunloop_mainThreadStuck,
         kRowRunloop_performanceOptimization,
     ];
     NSMutableArray *rowDicList = [NSMutableArray array];

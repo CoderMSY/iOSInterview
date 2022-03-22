@@ -14,6 +14,7 @@
 #import "MSYRunloopPresenter.h"
 #import "MSYPermanantThread.h"
 #import "MSYCFPermanantThread.h"
+#import "MSYLagMonitor.h"
 
 @interface MSYRunloopViewController () <MSYPresenterCommonOutput, MSYTableViewProtocol>
 
@@ -45,6 +46,8 @@
     NSLog(@"%s", __func__);
     
     [_timer invalidate];
+    
+    [[MSYLagMonitor shareInstance] endMonitor];
 }
 
 #pragma mark - public methods
@@ -108,6 +111,14 @@
     }
     else if ([rowModel.title isEqualToString:kRowRunloop_timer]) {
         [self timerMethod];
+    }
+    else if ([rowModel.title isEqualToString:kRowRunloop_monitorPerformanceLag]) {
+        [[MSYLagMonitor shareInstance] beginMonitor];
+    }
+    else if ([rowModel.title isEqualToString:kRowRunloop_mainThreadStuck]) {
+        NSLog(@"卡顿测试");
+        //usleep：单位为微妙 1秒=1000毫秒=1000000微妙 sleep：单位为秒
+        usleep(20 * 1000); //20毫秒
     }
     else if ([rowModel.title isEqualToString:kRowRunloop_performanceOptimization]) {
         [self.presenter pushRunLoopImageWithTitle:rowModel.title];
